@@ -1,0 +1,55 @@
+---
+// src/components/CallButton.astro
+// Componente estático: solo se muestra en dispositivos móviles
+---
+
+<a
+  href="tel:604168308"
+  class="call-button md:hidden"
+  title="Llamar ahora"
+>
+  <i class="fas fa-phone-volume text-2xl"></i>
+</a>
+
+<style>
+  .call-button {
+    position: fixed;
+    z-index: 50;
+    
+    /* --- POSICIÓN EN MÓVIL --- */
+    left: 1rem;
+    bottom: 5.5rem; 
+    
+    background-color: #3b82f6; 
+    color: white;
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+    animation: pulse-blue 2s infinite;
+  }
+
+  .call-button:hover {
+    background-color: #2563eb;
+    transform: scale(1.1);
+  }
+
+  @keyframes pulse-blue {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+  }
+
+  /* Ocultar en escritorio usando la lógica nativa de Astro/CSS */
+  @media (min-width: 768px) {
+    .call-button { 
+        display: none; 
+    }
+  }
+</style>

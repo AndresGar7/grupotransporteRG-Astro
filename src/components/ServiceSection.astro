@@ -1,0 +1,80 @@
+---
+// src/components/ServiceSection.astro
+
+const services = [
+    {
+        title: 'Mudanza Local',
+        description: 'Servicio rápido y seguro dentro de tu ciudad. Coordinación fácil y eficiente con vehículos adaptados.',
+        icon: 'fas fa-truck-moving',
+        link: '/servicios/mudanza-local'
+    },
+    {
+        title: 'Mudanza Nacional',
+        description: 'Llevamos tus pertenencias a cualquier punto del país. Rastreo satelital y pólizas de seguro incluidas.',
+        icon: 'fas fa-route',
+        link: '/servicios/mudanza-nacional'
+    },
+    {
+        title: 'Empaque Profesional',
+        description: 'Protegemos tu patrimonio. Usamos materiales de alta calidad (burbuja, cartón, vinipel) y técnicas expertas.',
+        icon: 'fas fa-box-open',
+        link: '/servicios/empaque-profesional'
+    },
+    {
+        title: 'Guardamuebles',
+        description: 'Almacenamiento seguro, vigilado y flexible para tus objetos por días, meses o años.',
+        icon: 'fas fa-warehouse',
+        link: '/servicios/guardamuebles'
+    }
+];
+---
+
+<div class="w-full py-16">
+    
+    <div class="w-full flex flex-col items-center justify-center mb-16 px-4 text-center">
+        <h2 class="font-brand text-3xl md:text-5xl text-[#1b1b18] dark:text-gray-100 uppercase mb-4 tracking-wide">
+            Nuestras <span class="text-[#f0ba18]">Soluciones</span>
+        </h2>
+        <div class="w-24 h-1.5 bg-[#f0ba18] rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto px-4 sm:px-6">
+
+        {services.map((service) => (
+            <div class="group relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-3xl p-6 sm:p-8 
+                        shadow-lg hover:shadow-2xl hover:shadow-[#f0ba18]/10 
+                        transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                
+                <div class="absolute top-0 right-0 w-32 h-32 bg-[#f0ba18]/5 rounded-full blur-3xl group-hover:bg-[#f0ba18]/20 transition-colors pointer-events-none"></div>
+
+                <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6 relative z-10">
+                    
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-2xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center group-hover:bg-[#f0ba18] transition-colors duration-300 shadow-inner">
+                            <i class={`${service.icon} text-3xl text-[#f0ba18] group-hover:text-black transition-colors duration-300`}></i>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full text-left">
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3 group-hover:text-[#f0ba18] transition-colors break-words leading-tight">
+                            {service.title}
+                        </h3>
+
+                        <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-6 font-light">
+                            {service.description}
+                        </p>
+                        
+                        <a href={service.link} 
+                           class="inline-flex items-center text-sm font-bold text-gray-900 dark:text-gray-100 bg-zinc-100 dark:bg-zinc-800 px-5 py-2.5 rounded-lg group-hover:bg-black group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all shadow-sm">
+                            Ver detalles
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 w-0 h-1.5 bg-[#f0ba18] group-hover:w-full transition-all duration-500 ease-out rounded-b-3xl"></div>
+            </div>
+        ))}
+
+    </div>
+</div>

@@ -1,0 +1,97 @@
+---
+// src/layouts/MainLayout.astro
+import Navbar from '../components/Navbar.vue';
+import Footer from '../components/Footer.astro';
+import ScrollTop from '../components/ScrollTop.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import CallButton from '../components/CallButton.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Grupo Transporte RG | Soluciones Logísticas", 
+  description = "Servicio de transporte de carga y logística integral." 
+} = Astro.props;
+
+// AQUÍ DEFINIMOS EL MENÚ COMPLETO COMO LO TENÍAS EN LARAVEL
+const menuItems = [
+  { 
+    name: 'Inicio', 
+    url: '/', 
+    submenu: [] 
+  },
+  { 
+    name: 'Servicios', 
+    url: '#', 
+    submenu: [
+      { name: 'Mudanza Local', url: '/servicios/mudanza-local' },
+      { name: 'Mudanza Nacional', url: '/servicios/mudanza-nacional' },
+      { name: 'Empaque Profesional', url: '/servicios/empaque-profesional' },
+      { name: 'Guardamuebles', url: '/servicios/guardamuebles' }
+    ] 
+  },
+  { 
+    name: 'Nosotros', 
+    url: '/nosotros', 
+    submenu: [
+      { name: 'Nuestra Historia', url: '/nosotros#historia' },
+      { name: 'Misión y Visión', url: '/nosotros#mision' },
+      { name: 'Equipo', url: '/nosotros#equipo' }
+    ] 
+  },
+  { 
+    name: 'Contacto', 
+    url: '/contacto', 
+    submenu: [
+        { name: 'Preguntas Frecuentes', url: '/faq' },
+        { name: 'Escríbenos', url: '/contacto#form' }
+    ] 
+  },
+];
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="bg-[url('/img/background_fond.svg')] bg-cover bg-fixed bg-center text-[#1b1b18] dark:text-gray-100">
+    <div class="flex min-h-screen flex-col items-center">
+        <header id="main-header" class="fixed top-0 w-full z-50">
+            <Navbar client:load initialMenuItems={menuItems} />
+        </header>
+
+        <main id="main-content" class="flex-1 w-full flex justify-center pt-[136px]">
+    <div class="w-full max-w-7xl bg-white dark:bg-black shadow-2xl overflow-hidden flex flex-col min-h-screen">
+        <slot />
+    </div>
+</main>
+
+        <Footer />
+        <CallButton />
+        <WhatsAppButton />
+        <ScrollTop />
+    </div>
+
+    <script is:inline>
+        function updateMainPadding() {
+            const header = document.querySelector('#main-header');
+            const main = document.querySelector('#main-content');
+            if (header && main) {
+                main.style.paddingTop = header.offsetHeight + 'px';
+            }
+        }
+        window.addEventListener('load', updateMainPadding);
+        window.addEventListener('resize', updateMainPadding);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+---
+// src/components/ScrollTop.astro
+---
+
+<button
+  id="scroll-to-top"
+  class="fixed bottom-4 right-4 z-50 bg-[#f0ba18] text-white p-3 rounded-full shadow-lg hover:bg-yellow-600 transition-all duration-300 translate-y-20 opacity-0 pointer-events-none"
+  title="Volver arriba"
+>
+  <i class="fas fa-arrow-up text-xl"></i>
+</button>
+
+<script>
+  const scrollBtn = document.getElementById('scroll-to-top');
+
+  if (scrollBtn) {
+    // Función para mostrar/ocultar el botón
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+        scrollBtn.classList.add('translate-y-0', 'opacity-100', 'pointer-events-all');
+      } else {
+        scrollBtn.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+        scrollBtn.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-all');
+      }
+    };
+
+    // Función para subir al inicio
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // Listeners
+    window.addEventListener('scroll', handleScroll);
+    scrollBtn.addEventListener('click', scrollToTop);
+  }
+</script>
+
+<style>
+  /* Aseguramos que el botón sea un círculo perfecto y maneje bien los estados */
+  #scroll-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+</style>

@@ -1,0 +1,67 @@
+---
+// src/components/WhatsAppButton.astro
+// No requiere lógica de servidor
+---
+
+<a
+  href="https://wa.me/573225019305?text=Hola,%20vengo%20de%20la%20web,%20quiero%20más%20información."
+  target="_blank"
+  class="whatsapp-button"
+  title="Chatear por WhatsApp"
+>
+  <i class="fab fa-whatsapp text-3xl"></i>
+</a>
+
+<style>
+  .whatsapp-button {
+    position: fixed;
+    z-index: 50;
+    
+    /* --- ESTILOS MÓVIL (Por defecto) --- */
+    left: 1rem;       /* A la izquierda */
+    right: auto; 
+    bottom: 1rem;     /* Al fondo */
+    
+    background-color: #25d366;
+    color: white;
+    padding: 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+    /* Combinamos las animaciones */
+    animation: floatSide 3s ease-in-out infinite, heartbeat 2s infinite;
+  }
+
+  /* --- ESTILOS ESCRITORIO (Pantallas > 768px) --- */
+  @media (min-width: 768px) {
+    .whatsapp-button {
+      left: auto;     /* Quitamos izquierda */
+      right: 1rem;    /* Pasamos a la derecha */
+      bottom: 5rem;   /* Lo subimos para dejar espacio al ScrollTop */
+    }
+  }
+
+  .whatsapp-button:hover {
+    background-color: #20b857;
+    transform: scale(1.2);
+    /* Al hacer hover, mantenemos el latido pero un poco más lento */
+    animation: heartbeat 2.5s infinite; 
+  }
+
+  @keyframes floatSide {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(3px); }
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(0.95); }
+    75% { transform: scale(1.05); }
+  }
+</style>

@@ -1,0 +1,91 @@
+---
+// src/components/WhyChooseUs.astro
+
+const features = [
+    {
+        title: 'Experiencia',
+        description: 'Más de 20 años realizando mudanzas a nivel nacional e internacional.',
+        image: '/img/experiencia.jpg',
+        alt: 'Experiencia en mudanzas'
+    },
+    {
+        title: 'Profesionalismo',
+        description: 'Personal capacitado, amable y puntual en cada servicio prestado.',
+        image: '/img/profesionalismo.png',
+        alt: 'Personal profesional'
+    },
+    {
+        title: 'Calidad',
+        description: 'Servicios respaldados por estándares de calidad y satisfacción del cliente.',
+        image: '/img/calidad.png',
+        alt: 'Calidad garantizada'
+    },
+    {
+        title: 'Nuestros Vehículos',
+        description: 'Flota moderna, equipada y adaptada para proteger tus pertenencias.',
+        image: '/img/vehiculos.png',
+        alt: 'Flota de vehículos'
+    },
+    {
+        title: 'Seguridad',
+        description: 'Monitoreo, embalaje profesional y manejo cuidadoso en todo momento.',
+        image: '/img/seguridad.png',
+        alt: 'Seguridad en transporte'
+    },
+    {
+        title: 'Cumplimiento',
+        description: 'Entregas a tiempo, con comunicación constante y compromiso total.',
+        image: '/img/cumplimiento.png',
+        alt: 'Cumplimiento de entregas'
+    }
+];
+---
+
+<div class="w-full py-16 md:py-24 px-4">
+    
+    <div class="max-w-4xl mx-auto text-center px-4 mb-16">
+        <h2 class="font-brand text-[#f0ba18] mb-6 uppercase leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-sm">
+            ¿Por qué elegirnos?
+        </h2>
+        <div class="w-24 h-1.5 bg-[#f0ba18] rounded-full mx-auto mb-6"></div>
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto">
+            Porque somos la empresa en Colombia que más <strong class="text-gray-900 dark:text-white">ventajas, seguridad y beneficios</strong> otorga a sus clientes.
+        </p>
+    </div>
+    
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+
+        {features.map((feature) => (
+            <div class="group relative bg-white dark:bg-zinc-900 rounded-3xl p-6 text-center 
+                        shadow-lg hover:shadow-2xl hover:shadow-[#f0ba18]/10 
+                        transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col border border-gray-100 dark:border-zinc-800 items-center">
+                
+                <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-[#f0ba18]/5 group-hover:to-[#f0ba18]/10 transition-colors pointer-events-none"></div>
+
+                <h3 class="font-brand text-gray-900 dark:text-white group-hover:text-[#f0ba18] transition-colors mb-6 uppercase text-xl sm:text-2xl relative z-10">
+                    {feature.title}
+                </h3>
+
+                <div class="relative w-48 h-48 mb-6 rounded-2xl overflow-hidden shadow-md group-hover:border-[#f0ba18] transition-colors duration-300">
+                    <img
+                        src={feature.image}
+                        alt={feature.alt}
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy"
+                    />
+                </div>
+
+                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base leading-relaxed relative z-10 px-2">
+                    {feature.description}
+                </p>
+
+                <div class="mt-4 text-[#f0ba18] opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 relative z-10">
+                    <i class="fas fa-check-circle text-2xl"></i>
+                </div>
+
+            </div>
+        ))}
+
+    </div>
+    
+</div>

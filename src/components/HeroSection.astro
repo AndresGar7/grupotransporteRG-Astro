@@ -1,0 +1,105 @@
+---
+// src/components/HeroSection.astro
+---
+
+<div class="w-full flex items-start justify-center overflow-hidden relative z-20 pt-32 md:pt-40 bg-white dark:bg-black">
+    <img
+        src="/img/welcome.jpg"
+        alt="Bienvenida Grupo Transporte RG"
+        class="w-full h-auto max-w-7xl mx-auto object-contain shadow-md block animate-fade-down"
+    />
+</div>
+
+<div class="w-full max-w-7xl mx-auto bg-white dark:bg-black relative z-10 transition-colors duration-500">
+    
+    <div class="w-full flex flex-col lg:flex-row overflow-hidden relative py-16 md:py-24 px-4 min-h-[600px] items-center">
+
+        <div class="absolute inset-0 z-0
+                    bg-[url('/img/colombia2.jpg')] md:bg-[url('/img/colombia.jpg')] 
+                    bg-contain bg-left bg-no-repeat
+                    opacity-20 dark:opacity-10 
+                    transition-all duration-500 
+                    mask-gradient">
+        </div>
+
+        <div class="absolute inset-0 bg-white/10 dark:bg-black/20 z-0"></div>
+
+        <div class="relative z-10 w-full h-full flex flex-col lg:flex-row items-center gap-8">
+            
+            <div class="w-full lg:w-[45%] flex items-center justify-center p-6">
+                <div class="flex flex-col text-center items-center justify-center animate-fade-in-up drop-shadow-sm">
+                    
+                    <p class="text-xl md:text-3xl font-medium text-gray-700 dark:text-gray-200 transition-colors drop-shadow-md">
+                        ¿Pensando en mudarte?
+                    </p>
+                    
+                    <h2 class="font-brand text-[#f0ba18] pt-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold drop-shadow-lg filter">
+                        Servicios de <br> mudanzas
+                    </h2>
+                    
+                    <p class="text-xl md:text-3xl pt-4 font-extrabold text-gray-800 dark:text-gray-100 uppercase tracking-widest transition-colors drop-shadow-md">
+                        Local y nacional
+                    </p>
+
+                    <div class="flex space-x-2 mt-4 mb-8 text-2xl text-yellow-400 drop-shadow-md">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    
+                    <div class="mt-2">
+                        <a href="https://wa.me/573225019305?text=Hola,%20vengo%20de%20la%20web,%20quiero%20más%20información." 
+                           target="_blank" 
+                           class="inline-block bg-black text-white dark:bg-[#f0ba18] dark:text-black hover:bg-[#f0ba18] hover:text-black dark:hover:bg-white dark:hover:text-black font-bold text-lg px-10 py-4 rounded-full transition-all shadow-xl transform hover:scale-105 border border-transparent">
+                             ¡Cotiza Ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[55%] flex items-center justify-center p-4">
+                <img 
+                    src="/img/welcome2.jpg" 
+                    alt="Mudanza Segura" 
+                    class="w-full max-w-lg xl:max-w-2xl h-auto object-contain rounded-3xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500 animate-fade-in-right" 
+                />
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Máscara para que el mapa se desvanezca sutilmente */
+    .mask-gradient {
+        mask-image: linear-gradient(to right, black 30%, transparent 80%);
+        -webkit-mask-image: linear-gradient(to right, black 30%, transparent 80%);
+    }
+
+    .animate-fade-down {
+        animation: fadeDown 1.5s ease-out forwards;
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 1.5s ease-out 0.5s forwards;
+        opacity: 0;
+    }
+
+    .animate-fade-in-right {
+        animation: fadeInRight 1.5s ease-out 0.8s forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeDown {
+        from { opacity: 0; transform: translateY(-50px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInRight {
+        from { opacity: 0; transform: translateX(40px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+</style>
