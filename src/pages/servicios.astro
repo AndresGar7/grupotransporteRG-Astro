@@ -1,0 +1,175 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+const allServices = [
+    {
+        title: 'Mudanzas',
+        description: 'Traslados integrales para hogares y oficinas. Nos encargamos de que tus pertenencias lleguen seguras a tu nuevo destino.',
+        icon: 'fas fa-truck-moving',
+        image: '/img/servicios/local.jpg',
+        link: '/servicios/mudanzas',
+        features: ['Personal experto', 'Vehículos alfombrados', 'Protección de muebles']
+    },
+    {
+        title: 'Acarreos',
+        description: 'Servicio de transporte rápido para objetos puntuales o mudanzas pequeñas dentro del área urbana.',
+        icon: 'fas fa-shipping-fast',
+        image: '/img/servicios/acarreos.jpg',
+        link: '/servicios/acarreos',
+        features: ['Disponibilidad inmediata', 'Carga y descarga rápida', 'Precios competitivos']
+    },
+    {
+        title: 'Carga Ligera',
+        description: 'Transporte de mercancías y suministros de bajo peso con máxima eficiencia y cuidado.',
+        icon: 'fas fa-box',
+        image: '/img/servicios/carga-ligera.png',
+        link: '/servicios/carga-ligera',
+        features: ['Logística ágil', 'Ideal para PYMES', 'Entregas programadas']
+    },
+    {
+        title: 'Carga Pesada',
+        description: 'Contamos con vehículos de gran capacidad para el traslado de maquinaria o mercancía de gran volumen a nivel nacional.',
+        icon: 'fas fa-truck-loading',
+        image: '/img/servicios/carga-pesada.png',
+        link: '/servicios/carga-pesada',
+        features: ['Vehículos de gran tonelaje', 'Seguro de carga', 'Conductores certificados']
+    },
+    {
+        title: 'Transporte de Motos "Varadas"',
+        description: 'Servicio especializado de grúa y transporte para motocicletas. Las llevamos al taller o a tu casa con total seguridad.',
+        icon: 'fas fa-motorcycle',
+        image: '/img/servicios/transporte-motos.png',
+        link: '/servicios/transporte-motos',
+        features: ['Anclaje de seguridad', 'Remolque especializado', 'Atención oportuna']
+    }
+];
+---
+
+<MainLayout 
+    title="Servicios - Soluciones Logísticas | Grupo Transporte RG"
+    description="Transporte de carga y mudanzas con geolocalización satelital. Seguridad y confianza en cada kilómetro."
+>
+    <section class="relative w-full pt-40 pb-16 md:pt-48 md:pb-24 px-6 md:px-12 overflow-hidden bg-black">
+        
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-60"
+             style="background-image: url('/img/colombia.jpg');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+                 <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-2 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                    <i class="fas fa-star mr-2"></i> Calidad Certificada
+                  </div>
+
+                  <h1 class="font-brand text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight animate-fade-up" style="animation-delay: 0.1s;">
+                    Servicios de <br> <span class="text-[#f0ba18] drop-shadow-md">Mudanzas</span>
+                  </h1>
+
+                  <p class="text-gray-200 text-lg md:text-xl font-light leading-relaxed max-w-lg animate-fade-up" style="animation-delay: 0.2s;">
+                    Realizamos el transporte en nuestra propia flota equipada con 
+                    <strong class="text-white font-bold border-b-2 border-[#f0ba18]">geolocalización satelital</strong>. 
+                    Seguridad, confianza y respaldo en cada kilómetro.
+                  </p>
+
+                  <div class="flex justify-center lg:justify-start space-x-2 text-[#f0ba18] text-xl animate-fade-up" style="animation-delay: 0.3s;">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+
+                  <div class="pt-4 animate-fade-up" style="animation-delay: 0.4s;">
+                    <a href="https://wa.me/573225019305?text=Hola,%20vengo%20de%20la%20web,%20quiero%20más%20información." target="_blank" 
+                       class="inline-flex items-center bg-white text-black hover:bg-[#f0ba18] font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl">
+                      ¡Cotiza Ahora!
+                      <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                  </div>
+            </div>
+
+            <div class="w-full flex justify-center lg:justify-end relative animate-fade-up" style="animation-delay: 0.2s;">
+                <div class="relative w-full max-w-md aspect-[4/3]">
+                    <div class="absolute top-4 -right-4 w-full h-full bg-[#f0ba18] rounded-[2rem] -z-10 opacity-40 blur-md transform rotate-2"></div>
+                    
+                    <img src="/img/servicios.jpg" alt="Flota RG" class="w-full h-full rounded-[2rem] shadow-2xl border border-white/20 relative z-10 object-cover bg-zinc-800">
+                    
+                    <div class="absolute -bottom-6 -left-6 z-20 hidden md:flex items-center gap-3 bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-700 p-4 rounded-2xl shadow-xl animate-bounce-slow">
+                        <div class="w-12 h-12 rounded-full bg-[#f0ba18] text-black flex items-center justify-center text-xl shadow-inner">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-[10px] text-gray-500 uppercase font-bold tracking-wider mb-0.5">Garantía</p>
+                            <p class="text-base font-bold text-gray-900 dark:text-white leading-none">100% Segura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+            <div class="flex flex-wrap justify-center gap-8">
+                {allServices.map((service) => (
+                    <div class="group flex flex-col bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-zinc-800 hover:border-[#f0ba18] w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.5rem)] max-w-sm">
+                        
+                        <div class="relative h-56 overflow-hidden">
+                            <img 
+                                src={service.image} 
+                                alt={service.title} 
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div class="absolute top-4 left-4 bg-[#f0ba18] text-black p-3 rounded-xl shadow-lg">
+                                <i class={`${service.icon} text-xl`}></i>
+                            </div>
+                        </div>
+
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold mb-3 text-black dark:text-white group-hover:text-[#f0ba18] transition-colors">
+                                {service.title}
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-5 text-base leading-snug flex-1">
+                                {service.description}
+                            </p>
+
+                            <ul class="space-y-2 mb-6">
+                                {service.features.map((feature) => (
+                                    <li class="flex items-center text-sm text-gray-700 dark:text-gray-300 font-medium">
+                                        <i class="fas fa-check-circle text-[#f0ba18] mr-2 text-base"></i>
+                                        {feature}
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <a href={service.link} class="inline-block w-full text-center bg-black dark:bg-zinc-800 text-white dark:text-white font-bold py-3 rounded-xl hover:bg-[#f0ba18] hover:text-black transition-all text-base shadow-sm">
+                                Ver más
+                            </a>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-bounce-slow {
+        animation: bounce-slow 3s infinite;
+    }
+
+    @keyframes bounce-slow {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+    }
+</style>

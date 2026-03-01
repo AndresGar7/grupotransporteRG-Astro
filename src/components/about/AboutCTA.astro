@@ -1,0 +1,53 @@
+---
+// src/components/about/AboutCTA.astro
+---
+<section class="relative py-16 md:py-20 bg-[#f0ba18] dark:bg-[#d9a611] overflow-hidden transition-colors duration-300">
+    
+    <div class="absolute -top-4 -left-4 md:top-0 md:left-0 p-4 opacity-5 pointer-events-none select-none">
+        <i class="fas fa-handshake text-6xl md:text-8xl text-black transform -rotate-12"></i>
+    </div>
+
+    <div class="absolute -top-6 -right-6 md:top-0 md:right-0 p-4 opacity-5 pointer-events-none select-none">
+         <i class="fas fa-comments text-7xl md:text-8xl text-black transform rotate-12"></i>
+    </div>
+
+    <div class="absolute -bottom-6 -left-2 md:bottom-0 md:left-10 p-4 opacity-5 pointer-events-none select-none">
+         <i class="fas fa-map-marked-alt text-6xl md:text-8xl text-black transform -rotate-6"></i>
+    </div>
+
+    <div class="absolute -bottom-8 -right-4 md:bottom-0 md:right-0 p-4 opacity-5 pointer-events-none select-none">
+         <i class="fas fa-headset text-7xl md:text-8xl text-black transform rotate-[20deg]"></i>
+    </div>
+    
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        
+        <h2 class="font-brand text-2xl md:text-3xl lg:text-4xl text-black uppercase mb-8 leading-tight drop-shadow-sm">
+            ¿Buscas un aliado logístico <br class="hidden sm:block"> que hable tu mismo idioma?
+        </h2>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            
+            <a href="https://wa.me/573225019305" target="_blank" 
+               class="group relative inline-flex items-center justify-center w-full sm:w-auto
+                      bg-black text-white font-bold text-lg px-8 py-3 rounded-xl 
+                      border-2 border-transparent
+                      transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl
+                      hover:border-green-500
+                      hover:text-green-400
+                      hover:shadow-[0_0_15px_rgba(34,197,94,0.4),inset_0_0_15px_rgba(34,197,94,0.2)]">
+                
+                <i class="fab fa-whatsapp mr-3 text-2xl transition-transform duration-300 group-hover:rotate-[15deg]"></i>
+                <span>Cotizar por WhatsApp</span>
+            </a>
+
+            <a href="/nosotros/cobertura" 
+               class="inline-flex items-center justify-center w-full sm:w-auto
+                      bg-white/30 backdrop-blur-md border-2 border-black text-black font-bold text-lg px-8 py-3 rounded-xl 
+                      hover:bg-black hover:text-[#f0ba18] hover:border-black 
+                      transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-lg">
+                Ver cobertura
+            </a>
+
+        </div>
+    </div>
+</section>

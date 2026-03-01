@@ -1,0 +1,104 @@
+---
+// AboutHero.astro
+// No requiere lógica adicional
+---
+
+<div class="relative w-full min-h-[70vh] sm:min-h-[65vh] lg:min-h-[60vh] flex items-center justify-center overflow-hidden bg-zinc-950 transition-colors duration-700">
+
+    <div class="absolute inset-0 z-0 animacion-imagen">
+        <img 
+            src="/img/about-hero.jpg" 
+            alt="Equipo Grupo Transporte RG" 
+            class="absolute inset-0 w-full h-full object-cover object-center opacity-40 dark:opacity-30 mix-blend-multiply hover:scale-105 transition-transform duration-[20s] ease-linear"
+        />
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-[1]"></div>
+            
+    <div class="relative z-10 text-center px-6 py-12 md:px-12 max-w-5xl flex flex-col items-center">
+        
+        <span class="animacion-badge inline-block py-2 px-5 rounded-xl bg-brand/10 border border-brand/50 text-brand text-xs md:text-sm font-bold uppercase tracking-wider mb-6 backdrop-blur-md shadow-lg shadow-brand/10">
+            Desde 2021
+        </span>
+
+        <h1 class="animacion-titulo font-brand text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase mb-6 drop-shadow-2xl leading-[1.1]">
+            Movemos el <br class="hidden sm:block"> progreso de <br class="hidden sm:block"> 
+            <span class="texto-gradiente-colombia">Colombia</span>
+        </h1>
+
+        <p class="animacion-texto text-white/90 md:text-xl max-w-3xl mx-auto leading-relaxed font-bold  tracking-wider  text-balance">
+            Más que transportar carga, conectamos sueños. Un equipo humano y tecnológico comprometido con tu tranquilidad.
+        </p>
+    </div>
+</div>
+
+<style>
+    /* Animaciones idénticas a las anteriores */
+    .animacion-imagen,
+    .animacion-badge,
+    .animacion-titulo,
+    .animacion-texto {
+        opacity: 0;
+    }
+
+    .animacion-imagen { animation: fadeIn 2s ease-out forwards; }
+    .animacion-badge { animation: fadeTranslateDown 1s ease-out 0.3s forwards; }
+    .animacion-titulo { animation: fadeTranslateUp 1s ease-out 0.5s forwards; }
+    .animacion-texto { animation: fadeTranslateUp 1s ease-out 0.7s forwards; }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeTranslateDown {
+        from { opacity: 0; transform: translateY(-1rem); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeTranslateUp {
+        from { opacity: 0; transform: translateY(2rem); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .texto-gradiente-colombia {
+        display: inline-block;
+        background: linear-gradient(to right, #f0ba18, #fef08a); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        filter: drop-shadow(0px 0px 0px transparent); 
+    }
+
+    /* 5. Estilos para mejorar la legibilidad del párrafo sobre la imagen */
+    .texto-descripcion-hero {
+        /* Doble sombra: una corta para definir el borde y una difuminada para contraste */
+        text-shadow: 
+            0px 2px 4px rgb(255, 255, 255), 
+            0px 4px 12px rgba(255, 255, 255, 0.5);
+        /* Un poquitito de espacio entre letras para que respire mejor la fuente 'light' */
+        letter-spacing: 0.02em;
+    }
+
+    /* ... (tus otros estilos) ... */
+
+    .animacion-badge {
+        /* Mantiene el elemento invisible antes de que pase el delay de 300ms */
+        opacity: 0; 
+        /* Aplica la animación: nombre | duración | easing | delay | quedarse en el estado final (forwards) */
+        animation: fadeInDown 1s ease-out 0.3s forwards;
+    }
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-1rem); /* Esto equivale a la clase -translate-y-4 de Tailwind */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0); /* Esto equivale a translate-y-0 */
+        }
+    }
+
+</style>

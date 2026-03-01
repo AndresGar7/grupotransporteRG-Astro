@@ -1,0 +1,58 @@
+---
+// src/components/about/AboutTeam.astro
+
+const teamMembers = [
+  {
+    name: 'Fundador/a',
+    role: 'Gerencia General',
+    image: '/img/team/member1.png', 
+  },
+  {
+    name: 'Jefe de Operaciones',
+    role: 'Logística y Rutas',
+    image: '/img/team/member2.jpg',
+  },
+  {
+    name: 'Coordinador/a',
+    role: 'Atención al Cliente',
+    image: '/img/team/member3.png',
+  },
+];
+---
+<section class="py-16 md:py-24 bg-white dark:bg-black transition-colors duration-300">
+    <div class="px-6 md:px-12">
+        <div class="text-center mb-16">
+            <h2 class="font-brand text-2xl md:text-4xl text-gray-900 dark:text-white uppercase mb-4">
+                Talento Humano
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Detrás del volante y del teléfono, hay expertos cuidando tu carga.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {teamMembers.map((member) => (
+                <div class="group relative bg-white dark:bg-zinc-900 border border-border rounded-3xl p-4 shadow-lg hover:shadow-2xl hover:shadow-[#f0ba18]/10 transition-all duration-300 hover:-translate-y-2">
+                    
+                    <div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4 bg-gray-100 dark:bg-zinc-800">
+                        <img src={member.image} alt={member.name} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <div class="absolute inset-0 bg-black/0 dark:bg-black/10"></div>
+                    </div>
+                    
+                    <div class="text-center pb-2">
+                        <h3 class="font-brand text-lg text-gray-900 dark:text-white uppercase mb-1">
+                            {member.name}
+                        </h3>
+                        <p class="text-[#f0ba18] font-medium text-sm">
+                            {member.role}
+                        </p>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#f0ba18] group-hover:w-full transition-all duration-500 rounded-b-3xl"></div>
+                </div>
+            ))}
+
+        </div>
+    </div>
+</section>

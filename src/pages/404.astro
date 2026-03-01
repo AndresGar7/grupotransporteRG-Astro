@@ -1,0 +1,67 @@
+---
+// src/pages/404.astro
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout 
+    title="404 - Ruta No Encontrada | Grupo Transporte RG"
+    description="Vaya, parece que te has desviado del camino. Déjanos ayudarte a volver a la ruta correcta."
+>
+    <section class="relative w-full min-h-screen flex items-center justify-center bg-black overflow-hidden pt-20">
+        
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(240,186,24,0.05)_0%,_transparent_70%)]"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
+            
+            <div class="mb-2">
+                <h1 class="font-brand text-[150px] sm:text-[200px] md:text-[250px] leading-none text-white opacity-90">
+                    404
+                </h1>
+            </div>
+
+            <h2 class="font-brand text-xl md:text-3xl text-[#f0ba18] mb-8 tracking-widest">
+                RUTA NO ENCONTRADA
+            </h2>
+
+            <p class="text-gray-400 text-lg md:text-xl max-w-xl mb-16 font-light">
+                Parece que este destino no está en nuestro manifiesto. 
+                <span class="text-white block mt-2">¿Deseas volver al camino principal?</span>
+            </p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
+                
+                <a href="/" 
+                   class="w-full md:w-64 h-16 flex items-center justify-center gap-3 bg-[#f0ba18] text-black font-bold rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-yellow-500/10 uppercase text-sm tracking-wider">
+                    <i class="fas fa-home text-lg"></i>
+                    Inicio
+                </a>
+
+                <a href="/contacto" 
+                   class="w-full md:w-64 h-16 flex items-center justify-center gap-3 bg-white text-black font-bold rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-white/5 uppercase text-sm tracking-wider">
+                    <i class="fas fa-headset text-lg"></i>
+                    Soporte
+                </a>
+
+            </div>
+        </div>
+    </section>
+</MainLayout>
+
+<style>
+    /* Definimos la animación de entrada */
+    section {
+        animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Aseguramos que la fuente Ethnocentric no tenga márgenes extraños */
+    .font-brand {
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+    }
+</style>

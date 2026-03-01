@@ -17,21 +17,17 @@ const {
   description = "Servicio de transporte de carga y logística integral." 
 } = Astro.props;
 
-// AQUÍ DEFINIMOS EL MENÚ COMPLETO COMO LO TENÍAS EN LARAVEL
 const menuItems = [
-  { 
-    name: 'Inicio', 
-    url: '/', 
-    submenu: [] 
-  },
+  { name: 'Inicio', url: '/', submenu: [] },
   { 
     name: 'Servicios', 
-    url: '#', 
+    url: '/servicios',
     submenu: [
-      { name: 'Mudanza Local', url: '/servicios/mudanza-local' },
-      { name: 'Mudanza Nacional', url: '/servicios/mudanza-nacional' },
-      { name: 'Empaque Profesional', url: '/servicios/empaque-profesional' },
-      { name: 'Guardamuebles', url: '/servicios/guardamuebles' }
+      { name: 'Mudanzas', url: '/servicios/mudanzas' },
+      { name: 'Acarreos', url: '/servicios/acarreos' },
+      { name: 'Carga Ligera', url: '/servicios/carga-ligera' },
+      { name: 'Carga Pesada', url: '/servicios/carga-pesada' },
+      { name: 'Transporte de Motos "Varadas"', url: '/servicios/transporte-motos' }
     ] 
   },
   { 
@@ -70,11 +66,11 @@ const menuItems = [
             <Navbar client:load initialMenuItems={menuItems} />
         </header>
 
-        <main id="main-content" class="flex-1 w-full flex justify-center pt-[136px]">
-    <div class="w-full max-w-7xl bg-white dark:bg-black shadow-2xl overflow-hidden flex flex-col min-h-screen">
-        <slot />
-    </div>
-</main>
+        <main id="main-content" class="flex-1 w-full flex justify-center pt-[140px] md:pt-[160px]">
+            <div class="w-full max-w-7xl bg-white dark:bg-black shadow-2xl overflow-hidden flex flex-col min-h-screen">
+                <slot />
+            </div>
+        </main>
 
         <Footer />
         <CallButton />
@@ -87,7 +83,8 @@ const menuItems = [
             const header = document.querySelector('#main-header');
             const main = document.querySelector('#main-content');
             if (header && main) {
-                main.style.paddingTop = header.offsetHeight + 'px';
+                // Añadimos un pequeño margen extra de 10px para que el contenido respire
+                main.style.paddingTop = (header.offsetHeight + 10) + 'px';
             }
         }
         window.addEventListener('load', updateMainPadding);
@@ -95,3 +92,21 @@ const menuItems = [
     </script>
 </body>
 </html>
+
+<style is:global>
+  /* 1. Definición de la fuente local Ethnocentric */
+  @font-face {
+    font-family: 'Ethnocentric';
+    src: url('/fonts/ethnocentric_rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* 2. Clase Global para títulos impactantes */
+  .font-brand {
+    font-family: 'Ethnocentric', sans-serif;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+</style>

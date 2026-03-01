@@ -1,0 +1,28 @@
+---
+// src/pages/nosotros.astro
+import MainLayout from '../layouts/MainLayout.astro';
+import AboutHero from '../components/about/AboutHero.astro';
+import AboutStory from '../components/about/AboutStory.astro';
+import AboutValues from '../components/about/AboutValues.astro';
+import AboutTeam from '../components/about/AboutTeam.astro';
+import AboutCTA from '../components/about/AboutCTA.astro';
+---
+
+<MainLayout title="Nosotros - Grupo Transporte RG">
+  <div class="w-full min-h-screen pt-[140px] md:pt-[145px] bg-cover bg-fixed bg-center flex flex-col items-center">
+
+    <div class="w-full max-w-7xl bg-white dark:bg-black shadow-2xl overflow-hidden flex flex-col">
+
+      <AboutHero />
+
+      <AboutStory />
+
+      <AboutValues />
+
+      <AboutTeam />
+
+      <AboutCTA />
+
+    </div>
+  </div>
+</MainLayout>
