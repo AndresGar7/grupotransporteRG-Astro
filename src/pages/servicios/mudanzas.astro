@@ -1,0 +1,177 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
+---
+
+<MainLayout title="Servicios de Mudanzas | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-32 md:pt-48 md:pb-48 px-6 md:px-12 overflow-hidden bg-zinc-900">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-50"
+            style="background-image: url('/img/servicios/mudanzas/mudanzas-hero.png');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 via-black/70 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-box-open mr-2"></i> Trasteos Locales y Nacionales
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Servicios de <br class="md:hidden"> <span class="text-[#f0ba18] drop-shadow-md">Mudanzas</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-2xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md" style="animation-delay: 0.2s;">
+                Llevamos tu hogar u oficina a su nuevo destino con el mayor cuidado, seguridad y profesionalismo. Tú relájate, nosotros nos encargamos del peso.
+            </p>
+        </div>
+    </section>
+
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-24">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-24 md:-mt-32 space-y-16 md:space-y-24">
+            
+            <div class="animate-fade-up" style="animation-delay: 0.3s;">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    
+                    <div class="md:col-span-2 group bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-zinc-800 relative overflow-hidden">
+                        <div class="absolute right-0 bottom-0 opacity-5 dark:opacity-10 pointer-events-none transition-transform duration-700 group-hover:scale-110">
+                            <i class="fas fa-couch text-[15rem] -mb-10 -mr-10 text-black dark:text-white"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 rounded-2xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center mb-8 border border-[#f0ba18]/20 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-people-carry text-3xl"></i>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white mb-4 uppercase tracking-wide">
+                                Cuidado <span class="text-[#f0ba18]">Extremo</span>
+                            </h2>
+                            <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light max-w-2xl">
+                                Entendemos que no transportamos simples objetos, transportamos tus recuerdos y tu patrimonio. Nuestro equipo operativo está altamente capacitado en técnicas de <strong class="text-black dark:text-white font-bold">embalaje, cargue y descargue</strong> para garantizar que cada mueble, electrodoméstico y artículo delicado llegue en perfectas condiciones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-[#f0ba18] rounded-[2.5rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 opacity-10 pointer-events-none mt-4 mr-4 transition-transform duration-700 group-hover:rotate-12">
+                            <i class="fas fa-shield-alt text-[10rem] text-black"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 rounded-2xl bg-black/10 text-black flex items-center justify-center mb-6">
+                                <i class="fas fa-lock text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-brand text-black mb-4 uppercase tracking-wide">
+                                100% Seguro
+                            </h3>
+                            <p class="text-black/80 text-lg leading-relaxed font-medium">
+                                Flota moderna, monitoreo satelital en ruta y pólizas de seguro opcionales para tu total tranquilidad.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
+                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
+                            <i class="fas fa-boxes text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Servicio de Embalaje</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Suministramos material de empaque profesional (cartón corrugado, plástico burbuja, mantas) para proteger tu mobiliario.</p>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
+                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
+                            <i class="fas fa-building text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Mudanzas Corporativas</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Traslado de oficinas, equipos de cómputo y archivo con logística planificada para no interrumpir tu operación.</p>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
+                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
+                            <i class="fas fa-map-marked-alt text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Cobertura Nacional</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Servicio puerta a puerta desde y hacia cualquier ciudad de Colombia, con tiempos de entrega garantizados.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="animate-fade-up py-12 md:py-24" style="animation-delay: 0.5s;">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                        ¿Cómo <span class="text-[#f0ba18]">Funciona?</span>
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 mt-3 font-light text-lg max-w-2xl mx-auto">
+                        Una metodología diseñada para que tu trasteo sea una experiencia libre de estrés.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gray-200 dark:bg-zinc-800 -translate-y-1/2 z-0"></div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-white dark:bg-zinc-900 border-4 border-gray-100 dark:border-zinc-800 group-hover:border-[#f0ba18] text-2xl font-brand text-black dark:text-white flex items-center justify-center shadow-lg transition-colors duration-300 mb-6">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Cotización</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Contáctanos. Evaluamos el volumen de tu carga y te damos un presupuesto transparente.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-white dark:bg-zinc-900 border-4 border-gray-100 dark:border-zinc-800 group-hover:border-[#f0ba18] text-2xl font-brand text-black dark:text-white flex items-center justify-center shadow-lg transition-colors duration-300 mb-6">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Embalaje</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">El día acordado, nuestro equipo empaca y protege cuidadosamente tus pertenencias.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-white dark:bg-zinc-900 border-4 border-gray-100 dark:border-zinc-800 group-hover:border-[#f0ba18] text-2xl font-brand text-black dark:text-white flex items-center justify-center shadow-lg transition-colors duration-300 mb-6">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Transporte</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Trasladamos tu mudanza en vehículos acondicionados y con monitoreo constante.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-[#f0ba18] border-4 border-white dark:border-zinc-950 text-2xl font-brand text-black flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 mb-6">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Entrega</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Descargamos y ubicamos tus muebles en su nuevo hogar, tal como lo solicitaste.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate-fade-up" style="animation-delay: 0.7s;">
+                <div class="bg-black dark:bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center shadow-2xl border border-zinc-800 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+                    <div class="relative z-10">
+                        <h2 class="font-brand text-3xl md:text-5xl text-white uppercase tracking-wide mb-6">
+                            ¿Listo para <span class="text-[#f0ba18]">mudarte?</span>
+                        </h2>
+                        <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                            Déjanos los detalles pesados a nosotros. Escríbenos ahora y recibe una cotización personalizada sin compromiso.
+                        </p>
+                        
+                        <WhatsAppBtn texto="Hablemos de tu envío"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>

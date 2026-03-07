@@ -1,0 +1,323 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
+---
+
+<MainLayout title="Transporte y Rescate de Motos | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-32 md:pt-48 md:pb-48 px-6 md:px-12 overflow-hidden bg-zinc-900">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-50"
+            style="background-image: url('/img/servicios/transporte-motos/motos-hero.png');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 via-black/70 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-motorcycle mr-2"></i> Rescate y Traslado Especializado
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Transporte de <br class="md:hidden"> <span class="text-[#f0ba18] drop-shadow-md">Motos</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-2xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md" style="animation-delay: 0.2s;">
+                ¿Te quedaste varado? Rescatamos tu moto y la llevamos al taller o a tu casa con el mayor cuidado. Cero rayones, 100% segura.
+            </p>
+        </div>
+    </section>
+
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-20">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-24 md:-mt-32 space-y-12 md:space-y-16">
+            
+            <div class="animate-fade-up" style="animation-delay: 0.3s;">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    
+                    <div class="md:col-span-2 group bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-zinc-800 relative overflow-hidden">
+                        <div class="absolute right-0 bottom-0 opacity-5 dark:opacity-10 pointer-events-none transition-transform duration-700 group-hover:scale-110">
+                            <i class="fas fa-tools text-[15rem] -mb-10 -mr-10 text-black dark:text-white"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 rounded-2xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center mb-8 border border-[#f0ba18]/20 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-lock text-3xl"></i>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white mb-4 uppercase tracking-wide">
+                                Anclaje <span class="text-[#f0ba18]">Perfecto</span>
+                            </h2>
+                            <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light max-w-2xl">
+                                Sabemos lo mucho que cuidas tu máquina. Utilizamos <strong class="text-black dark:text-white font-bold">rampas antideslizantes y eslingas (ratchets) de alta resistencia</strong> con un sistema de sujeción que inmoviliza la suspensión sin tocar ni rayar los carenajes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-[#f0ba18] rounded-[2.5rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 opacity-10 pointer-events-none mt-4 mr-4 transition-transform duration-700 group-hover:rotate-12">
+                            <i class="fas fa-stopwatch text-[10rem] text-black"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 rounded-2xl bg-black/10 text-black flex items-center justify-center mb-6">
+                                <i class="fas fa-bolt text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-brand text-black mb-4 uppercase tracking-wide">
+                                Al Rescate
+                            </h3>
+                            <p class="text-black/80 text-lg leading-relaxed font-medium">
+                                Atención oportuna. Llegamos rápido al lugar de la varada para sacarte del apuro y llevarte a un lugar seguro.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
+                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
+                            <i class="fas fa-tachometer-alt text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Todo Cilindraje</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Capacidad para transportar desde scooters ligeras hasta pesadas motos Touring, Custom o Sport.</p>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
+                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Puerta a Taller</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Te recogemos en la vía, tu casa o el trabajo, y entregamos directamente en manos de tu mecánico.</p>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
+                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Viaje Protegido</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Vehículos cubiertos o con carpa para proteger tu motocicleta de la lluvia y las miradas en el trayecto.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="animate-fade-up w-full" style="animation-delay: 0.5s;">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                        ¿Cuándo llamarnos?
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 mt-3 font-light text-lg max-w-2xl mx-auto">
+                        Estamos listos para cualquier situación que te impida rodar.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row h-[600px] md:h-[500px] w-full gap-3 md:gap-4 overflow-hidden">
+                    
+                    <div class="accordion-item min-h-[100px] md:min-h-0 group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/transporte-motos/varada.png" alt="Moto Varada" class="imagen-fondo absolute inset-0 w-full h-full object-cover transition-all duration-700 grayscale-[30%] brightness-[0.4] md:group-hover:grayscale-0 md:group-hover:brightness-100 md:group-hover:scale-110" />
+                        
+                        <div class="capa-oscura absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-700 md:group-hover:opacity-0"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full relative z-10 pointer-events-none">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0 shadow-lg">
+                                    <i class="fas fa-wrench"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap titulo-sombra transition-all duration-500">
+                                    Falla Mecánica
+                                </h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-black font-bold text-sm md:text-base overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100 texto-resplandor mt-1">
+                                    ¿La moto no prende, se reventó la cadena o te pinchaste? No te arriesgues a empujarla, nosotros pasamos por ella.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item min-h-[100px] md:min-h-0 group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/transporte-motos/siniestro.png" alt="Accidente de moto" class="imagen-fondo absolute inset-0 w-full h-full object-cover transition-all duration-700 grayscale-[30%] brightness-[0.4] md:group-hover:grayscale-0 md:group-hover:brightness-100 md:group-hover:scale-110" />
+                        
+                        <div class="capa-oscura absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-700 md:group-hover:opacity-0"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full relative z-10 pointer-events-none">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0 shadow-lg">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap titulo-sombra transition-all duration-500">
+                                    Siniestros
+                                </h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-black font-bold text-sm md:text-base overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100 texto-resplandor mt-1">
+                                    En caso de un choque o caída, recuperamos la motocicleta con extrema delicadeza para no agravar los daños en chasis o motor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item min-h-[100px] md:min-h-0 group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/transporte-motos/nueva.png" alt="Moto Nueva" class="imagen-fondo absolute inset-0 w-full h-full object-cover transition-all duration-700 grayscale-[30%] brightness-[0.4] md:group-hover:grayscale-0 md:group-hover:brightness-100 md:group-hover:scale-110" />
+                        
+                        <div class="capa-oscura absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-700 md:group-hover:opacity-0"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full relative z-10 pointer-events-none">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0 shadow-lg">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap titulo-sombra transition-all duration-500">
+                                    Compra / Venta
+                                </h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-black font-bold text-sm md:text-base overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100 texto-resplandor mt-1">
+                                    ¿Compraste moto nueva y aún no tienes el pase o el SOAT? La recogemos en el concesionario y te la dejamos en la sala de tu casa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="animate-fade-up w-full" style="animation-delay: 0.5s;">
+                <div class="text-center mb-8 md:mb-10">
+                    <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                        Proceso de <span class="text-[#f0ba18]">Rescate</span>
+                    </h2>
+                    <p class="text-gray-700 dark:text-gray-400 mt-3 font-light text-xl max-w-2xl mx-auto">
+                        Simple, rápido y sin dolores de cabeza.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gray-200 dark:bg-zinc-800 -translate-y-1/2 z-0"></div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-white dark:bg-zinc-900 border-4 border-gray-100 dark:border-zinc-800 group-hover:border-[#f0ba18] text-2xl font-brand text-black dark:text-white flex items-center justify-center shadow-lg transition-colors duration-300 mb-6">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Ubicación</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Mándanos tu ubicación exacta por WhatsApp y el tipo de moto que tienes.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-white dark:bg-zinc-900 border-4 border-gray-100 dark:border-zinc-800 group-hover:border-[#f0ba18] text-2xl font-brand text-black dark:text-white flex items-center justify-center shadow-lg transition-colors duration-300 mb-6">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Llegada</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Llegamos con el vehículo preparado, bajamos la rampa y subimos tu moto.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-white dark:bg-zinc-900 border-4 border-gray-100 dark:border-zinc-800 group-hover:border-[#f0ba18] text-2xl font-brand text-black dark:text-white flex items-center justify-center shadow-lg transition-colors duration-300 mb-6">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Sujeción</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">La aseguramos firmemente con ratchets en 4 puntos para evitar cualquier movimiento.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-20 h-20 rounded-full bg-[#f0ba18] border-4 border-white dark:border-zinc-950 text-2xl font-brand text-black flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 mb-6">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-black dark:text-white mb-2">Entrega</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">La bajamos de forma segura en tu domicilio o en el taller indicado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate-fade-up w-full" style="animation-delay: 0.7s;">
+                <div class="bg-black dark:bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center shadow-2xl border border-zinc-800 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+                    <div class="relative z-10">
+                        <h2 class="font-brand text-3xl md:text-5xl text-white uppercase tracking-wide mb-6">
+                            ¿Te dejó <span class="text-[#f0ba18]">botado?</span>
+                        </h2>
+                        <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                            Tranquilo, a todos nos pasa. Haz clic en el botón, envíanos tu ubicación y vamos volando por ti.
+                        </p>
+                        
+                        <WhatsAppBtn 
+                            texto="¡Rescátenme!" 
+                            mensaje="Hola,%20me%20quedé%20varado%20con%20la%20moto%20y%20necesito%20el%20servicio%20de%20transporte." 
+                        />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Sombras mágicas para máxima legibilidad */
+    .titulo-sombra {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9), -1px -1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .texto-resplandor {
+        text-shadow: 0 0 6px #f0ba18, 
+                     0 0 12px #f0ba18, 
+                     0 0 18px #f0ba18, 
+                     0 0 4px #f0ba18;
+    }
+
+    /* Magia para móviles */
+    .accordion-item {
+        transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    @media (max-width: 767px) {
+        .accordion-item {
+            flex-basis: 100px !important;
+        }
+        .accordion-item.is-active {
+            flex: 3 !important;
+        }
+        
+        .accordion-item.is-active .imagen-fondo {
+            filter: grayscale(0%) brightness(1) !important;
+            transform: scale(1.1) !important;
+        }
+        .accordion-item.is-active .capa-oscura {
+            opacity: 0 !important;
+        }
+        
+        .accordion-item.is-active .accordion-content {
+            grid-template-rows: 1fr !important;
+        }
+        .accordion-item.is-active p {
+            opacity: 1 !important;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const items = document.querySelectorAll('.accordion-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            if (window.innerWidth < 768) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        items.forEach(item => item.classList.remove('is-active'));
+                        entry.target.classList.add('is-active');
+                    }
+                });
+            }
+        }, {
+            rootMargin: '-40% 0px -40% 0px' 
+        });
+
+        items.forEach(item => observer.observe(item));
+    });
+</script>

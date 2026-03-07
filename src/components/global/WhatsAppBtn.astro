@@ -1,0 +1,15 @@
+---
+// src/components/global/WhatsAppBtn.astro
+
+// Puedes pasarle un texto personalizado si quieres, o dejar uno por defecto
+const { texto = "Cotizar por WhatsApp", mensaje = "Hola,%20Vengo%20desde%20la%20web%20y%20quiero%20mas%20informacion."} = Astro.props;
+---
+
+<a href={`https://wa.me/573225019305?text=${mensaje}`} target="_blank" 
+   class="group relative inline-flex items-center justify-center w-full sm:w-auto bg-black font-bold text-lg px-8 py-3 rounded-xl border transition-all duration-500 transform hover:scale-105 
+          text-[#25D366] border-[#25D366] shadow-[0_0_15px_rgba(37,211,102,0.2)] 
+          md:text-white md:border-slate-50 md:shadow-xl md:hover:text-[#25D366] md:hover:border-[#25D366] md:hover:shadow-[0_0_25px_rgba(37,211,102,0.5)]">
+    
+    <i class="fab fa-whatsapp mr-3 text-2xl transition-transform duration-300 group-hover:rotate-[15deg]"></i>
+    <span>{texto}</span>
+</a>

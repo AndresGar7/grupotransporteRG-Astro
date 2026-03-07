@@ -1,0 +1,238 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
+
+// Lista de preguntas frecuentes AHORA CON ÍCONOS
+const faqs = [
+    {
+        icon: "fas fa-calendar-check",
+        pregunta: "¿Con cuánto tiempo de anticipación debo agendar un servicio?",
+        respuesta: "Para mudanzas y cargas pesadas, recomendamos agendar con al menos 2 a 3 días de anticipación para asegurar disponibilidad. Para acarreos urbanos o rescate de motos, prestamos servicio inmediato sujeto a la disponibilidad del momento."
+    },
+    {
+        icon: "fas fa-box-open",
+        pregunta: "¿El servicio incluye empaque y embalaje?",
+        respuesta: "¡Sí! Ofrecemos servicio de embalaje profesional como un adicional. Suministramos cartón corrugado, plástico burbuja, stretch film y mantas para proteger tus muebles y electrodomésticos durante el traslado."
+    },
+    {
+        icon: "fas fa-map-marked-alt",
+        pregunta: "¿Tienen cobertura en zonas rurales o veredas?",
+        respuesta: "Totalmente. Contamos con camiones tipo turbo de estacas (varilla y tabla) ideales para ingresar a fincas, trochas y caminos veredales en el Eje Cafetero y sus alrededores."
+    },
+    {
+        icon: "fas fa-calculator",
+        pregunta: "¿Cómo se calcula el costo del flete o mudanza?",
+        respuesta: "El costo se calcula teniendo en cuenta tres factores principales: la distancia del recorrido, el volumen/peso de la carga, y si requieres servicios adicionales (como cargue/descargue por escaleras, embalaje o desarmado de muebles)."
+    },
+    {
+        icon: "fas fa-wallet",
+        pregunta: "¿Qué métodos de pago aceptan?",
+        respuesta: "Para tu comodidad, aceptamos transferencias a través de Bancolombia, Nequi, Daviplata, pagos en efectivo al momento del cargue/descargue, y transferencias interbancarias para clientes corporativos."
+    },
+    {
+        icon: "fas fa-shield-alt",
+        pregunta: "¿Mi mercancía viaja asegurada?",
+        respuesta: "Sí. Todo nuestro servicio cuenta con garantías de cuidado extremo. Además, para mercancía comercial o industrial de alto valor, podemos expedir pólizas de seguro de transporte de carga para una cobertura total en carretera."
+    }
+];
+---
+
+<MainLayout title="Preguntas Frecuentes | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-24 md:pt-48 md:pb-32 px-6 md:px-12 overflow-hidden bg-black">
+        
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-40"
+             style="background-image: url('/img/contacto/faq-hero.jpg');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-0"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 md:h-48 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 to-transparent z-[2]"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-question-circle mr-2"></i> Centro de Ayuda
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Preguntas <br class="md:hidden"> <span class="text-[#f0ba18] drop-shadow-md">Frecuentes</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-2xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md relative z-10" style="animation-delay: 0.2s;">
+                Resolvemos tus dudas de forma clara y transparente. Conoce más sobre cómo trabajamos y protegemos tu patrimonio.
+            </p>
+        </div>
+    </section>
+
+    <div class="relative z-20 w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-20">
+        <div class="max-w-4xl mx-auto px-6 relative -mt-10 md:-mt-20">
+            
+            <div class="bg-white dark:bg-zinc-900 rounded-2xl shadow-xl p-2 flex items-center mb-10 border border-gray-100 dark:border-zinc-800 animate-fade-up relative z-30" style="animation-delay: 0.25s;">
+                <div class="w-12 h-12 flex items-center justify-center text-gray-400">
+                    <i class="fas fa-search text-xl"></i>
+                </div>
+                <input 
+                    type="text" 
+                    id="faq-search" 
+                    placeholder="Escribe tu duda (ej. métodos de pago, seguros...)" 
+                    class="w-full bg-transparent border-none text-gray-800 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-0 text-lg py-3 px-2"
+                >
+            </div>
+
+            <div class="space-y-4 animate-fade-up faq-container" style="animation-delay: 0.3s;">
+                <div id="no-results" class="hidden text-center py-10">
+                    <div class="w-16 h-16 bg-gray-100 dark:bg-zinc-800 text-gray-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-search-minus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">No encontramos esa pregunta</h3>
+                    <p class="text-gray-500 font-light">Prueba con otras palabras o contáctanos directamente abajo.</p>
+                </div>
+
+                {faqs.map((faq) => (
+                    <div class="faq-item bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
+                        
+                        <button class="faq-button w-full text-left px-6 py-5 md:py-6 flex justify-between items-center focus:outline-none transition-colors group-hover:bg-gray-50 dark:group-hover:bg-zinc-800/50">
+                            
+                            <div class="flex items-center space-x-4 pr-4">
+                                <div class="w-10 h-10 rounded-xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center shrink-0 border border-[#f0ba18]/20">
+                                    <i class={faq.icon}></i>
+                                </div>
+                                <span class="faq-pregunta-texto font-bold text-gray-900 dark:text-white text-lg md:text-xl">
+                                    {faq.pregunta}
+                                </span>
+                            </div>
+
+                            <div class="faq-icon w-10 h-10 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center shrink-0 transition-transform duration-500">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </button>
+
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-white dark:bg-zinc-900">
+                            <div class="px-6 pb-6 pt-2 pl-[4.5rem] border-t border-gray-100 dark:border-zinc-800/50">
+                                <p class="faq-respuesta-texto text-gray-600 dark:text-gray-400 leading-relaxed font-light md:text-lg">
+                                    {faq.respuesta}
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                ))}
+            </div>
+
+            <div class="mt-16 md:mt-24 animate-fade-up" style="animation-delay: 0.5s;">
+                <div class="bg-black dark:bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center shadow-2xl border border-zinc-800 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+                    <div class="relative z-10">
+                        <h2 class="font-brand text-3xl md:text-4xl text-white uppercase tracking-wide mb-6">
+                            ¿Aún tienes <span class="text-[#f0ba18]">dudas?</span>
+                        </h2>
+                        <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto font-light">
+                            Nuestro equipo de atención al cliente está listo para escucharte y darte una solución a tu medida. ¡Escríbenos directamente!
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                            <WhatsAppBtn 
+                                texto="Chatear con un Asesor" 
+                                mensaje="Hola,%20tengo%20una%20duda%20sobre%20sus%20servicios." 
+                            />
+                            <a href="/contacto/escribenos" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-white font-bold bg-transparent border-2 border-white/20 hover:border-[#f0ba18] hover:text-[#f0ba18] transition-colors duration-300 w-full sm:w-auto">
+                                Ir a Formulario <i class="fas fa-envelope ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Clases dinámicas agregadas por JavaScript */
+    .faq-item.is-open .faq-icon {
+        transform: rotate(45deg);
+        background-color: #f0ba18;
+        color: black;
+    }
+    
+    .faq-item.is-open {
+        border-color: #f0ba18 !important;
+    }
+</style>
+
+<script>
+    const inicializarFaqs = () => {
+        const faqItems = document.querySelectorAll('.faq-item');
+        const searchInput = document.getElementById('faq-search') as HTMLInputElement;
+        const noResultsMsg = document.getElementById('no-results');
+
+        // 1. Lógica del Acordeón
+        faqItems.forEach(item => {
+            const button = item.querySelector('.faq-button');
+            const content = item.querySelector('.faq-content') as HTMLElement;
+
+            button?.addEventListener('click', () => {
+                const isOpen = item.classList.contains('is-open');
+
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('is-open');
+                    const otherContent = otherItem.querySelector('.faq-content') as HTMLElement;
+                    if (otherContent) otherContent.style.maxHeight = '0px';
+                });
+
+                if (!isOpen && content) {
+                    item.classList.add('is-open');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // 2. Lógica del Buscador en tiempo real
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
+                let hasVisibleItems = false;
+
+                faqItems.forEach(item => {
+                    // Busca tanto en la pregunta como en la respuesta
+                    const pregunta = item.querySelector('.faq-pregunta-texto')?.textContent?.toLowerCase() || '';
+                    const respuesta = item.querySelector('.faq-respuesta-texto')?.textContent?.toLowerCase() || '';
+
+                    if (pregunta.includes(searchTerm) || respuesta.includes(searchTerm)) {
+                        (item as HTMLElement).style.display = 'block';
+                        hasVisibleItems = true;
+                    } else {
+                        (item as HTMLElement).style.display = 'none';
+                        // Cierra el acordeón si estaba abierto y fue filtrado
+                        item.classList.remove('is-open');
+                        const content = item.querySelector('.faq-content') as HTMLElement;
+                        if (content) content.style.maxHeight = '0px';
+                    }
+                });
+
+                // Mostrar mensaje de "No hay resultados" si no coincide nada
+                if (noResultsMsg) {
+                    if (hasVisibleItems) {
+                        noResultsMsg.classList.add('hidden');
+                    } else {
+                        noResultsMsg.classList.remove('hidden');
+                    }
+                }
+            });
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', inicializarFaqs);
+    document.addEventListener('astro:page-load', inicializarFaqs);
+</script>

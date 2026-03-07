@@ -1,5 +1,5 @@
 ---
-// AboutHero.astro
+// src/components/about/AboutHero.astro
 // No requiere lógica adicional
 ---
 
@@ -14,6 +14,8 @@
     </div>
 
     <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-[1]"></div>
+    
+    <div class="absolute bottom-0 left-0 right-0 h-32 md:h-48 bg-gradient-to-t from-white dark:from-black to-transparent z-[2]"></div>
             
     <div class="relative z-10 text-center px-6 py-12 md:px-12 max-w-5xl flex flex-col items-center">
         
@@ -26,7 +28,7 @@
             <span class="texto-gradiente-colombia">Colombia</span>
         </h1>
 
-        <p class="animacion-texto text-white/90 md:text-xl max-w-3xl mx-auto leading-relaxed font-bold  tracking-wider  text-balance">
+        <p class="animacion-texto text-white/90 md:text-xl max-w-3xl mx-auto leading-relaxed font-bold tracking-wider text-balance texto-descripcion-hero">
             Más que transportar carga, conectamos sueños. Un equipo humano y tecnológico comprometido con tu tranquilidad.
         </p>
     </div>
@@ -71,34 +73,22 @@
         filter: drop-shadow(0px 0px 0px transparent); 
     }
 
-    /* 5. Estilos para mejorar la legibilidad del párrafo sobre la imagen */
+    /* Estilos para mejorar la legibilidad del párrafo sobre la imagen */
     .texto-descripcion-hero {
-        /* Doble sombra: una corta para definir el borde y una difuminada para contraste */
         text-shadow: 
             0px 2px 4px rgb(255, 255, 255), 
             0px 4px 12px rgba(255, 255, 255, 0.5);
-        /* Un poquitito de espacio entre letras para que respire mejor la fuente 'light' */
         letter-spacing: 0.02em;
-    }
-
-    /* ... (tus otros estilos) ... */
-
-    .animacion-badge {
-        /* Mantiene el elemento invisible antes de que pase el delay de 300ms */
-        opacity: 0; 
-        /* Aplica la animación: nombre | duración | easing | delay | quedarse en el estado final (forwards) */
-        animation: fadeInDown 1s ease-out 0.3s forwards;
     }
 
     @keyframes fadeInDown {
         0% {
             opacity: 0;
-            transform: translateY(-1rem); /* Esto equivale a la clase -translate-y-4 de Tailwind */
+            transform: translateY(-1rem);
         }
         100% {
             opacity: 1;
-            transform: translateY(0); /* Esto equivale a translate-y-0 */
+            transform: translateY(0);
         }
     }
-
 </style>

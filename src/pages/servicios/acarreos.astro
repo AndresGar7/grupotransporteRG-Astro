@@ -1,0 +1,218 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
+---
+
+<MainLayout title="Servicios de Acarreos | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-32 md:pt-48 md:pb-48 px-6 md:px-12 overflow-hidden bg-zinc-900">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-50"
+            style="background-image: url('/img/servicios/acarreos/acarreos-hero.png');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 via-black/70 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-truck-pickup mr-2"></i> Rápido y Eficiente
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Servicios de <br class="md:hidden"> <span class="text-[#f0ba18] drop-shadow-md">Acarreos</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-2xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md" style="animation-delay: 0.2s;">
+                Movilizamos cargas pequeñas, muebles sueltos o mercancía ligera en tiempo récord. La solución ágil para tus necesidades inmediatas.
+            </p>
+        </div>
+    </section>
+
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-24">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-24 md:-mt-32 space-y-10 md:space-y-24">
+            
+            <div class="animate-fade-up" style="animation-delay: 0.3s;">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800 text-center">
+                        <div class="w-14 h-14 mx-auto rounded-full bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 transition-transform">
+                            <i class="fas fa-bolt text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-2">Respuesta Ágil</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">Disponibilidad para servicios el mismo día según requerimiento.</p>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800 text-center">
+                        <div class="w-14 h-14 mx-auto rounded-full bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 transition-transform">
+                            <i class="fas fa-wallet text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black dark:text-white mb-2">Economía</h4>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">Tarifas ajustadas al volumen real de tus artículos. No pagues de más.</p>
+                    </div>
+
+                    <div class="group bg-[#f0ba18] rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center lg:col-span-2 flex flex-col justify-center">
+                        <h3 class="text-2xl font-brand text-black mb-2 uppercase tracking-wide">
+                            Flota Vehicular Adaptable
+                        </h3>
+                        <p class="text-black/80 font-medium leading-relaxed">
+                            Contamos con camionetas tipo pickup, furgones ligeros y vehículos de platón para ingresar fácilmente a zonas residenciales o comerciales de difícil acceso.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate-fade-up pt-4 pb-0 md:py-20" style="animation-delay: 0.5s;">
+                <div class="text-center mb-8 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                        ¿Qué podemos <span class="text-[#f0ba18]">transportar?</span>
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 mt-3 font-light text-lg max-w-2xl mx-auto">
+                        Ideal para movimientos puntuales y entregas precisas.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row h-[600px] md:h-[500px] w-full gap-3 md:gap-4 overflow-hidden">
+                    
+                    <div class="accordion-item group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/acarreos/muebles.png" alt="Muebles" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0">
+                                    <i class="fas fa-couch"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap">Muebles Sueltos</h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-gray-300 text-sm md:text-base font-light overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                                    Compraste una sala, comedor o nevera nueva y necesitas llevarla a tu hogar de inmediato. Nosotros la recogemos y la entregamos con cuidado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/acarreos/materiales.png" alt="Materiales" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0">
+                                    <i class="fas fa-hammer"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap">Materiales</h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-gray-300 text-sm md:text-base font-light overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                                    Transporte de materiales de construcción, ferretería, herramientas o insumos para tu negocio directo a la obra o local.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/acarreos/eventos.png" alt="Eventos" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0">
+                                    <i class="fas fa-glass-cheers"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap">Logística Eventos</h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-gray-300 text-sm md:text-base font-light overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                                    Llevamos sillas, mesas, sonido y decoraciones al lugar de tu evento. Cumplimos estrictamente con los horarios pactados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="animate-fade-up" style="animation-delay: 0.7s;">
+                <div class="bg-black dark:bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center shadow-2xl border border-zinc-800 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+                    <div class="relative z-10">
+                        <h2 class="font-brand text-3xl md:text-5xl text-white uppercase tracking-wide mb-6">
+                            ¿Necesitas un <span class="text-[#f0ba18]">acarreo urgente?</span>
+                        </h2>
+                        <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                            Estamos listos para rodar. Contáctanos por WhatsApp indicando qué necesitas mover y de dónde a dónde.
+                        </p>
+                        
+                        <WhatsAppBtn 
+                            texto="Solicitar Acarreo" 
+                            mensaje="Hola,%20necesito%20cotizar%20un%20servicio%20de%20acarreo%20rápido." 
+                        />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Le damos una transición muy suave al acordeón para que no "salte" */
+    .accordion-item {
+        transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* MAGIA PARA MÓVILES: Clases activadas automáticamente por el Scroll */
+    @media (max-width: 767px) {
+        .accordion-item.is-active {
+            flex: 3 !important; /* Obliga a la tarjeta activa a ser 3 veces más grande */
+        }
+        .accordion-item.is-active img {
+            transform: scale(1.1) !important;
+        }
+        .accordion-item.is-active .accordion-content {
+            grid-template-rows: 1fr !important;
+        }
+        .accordion-item.is-active p {
+            opacity: 1 !important;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const items = document.querySelectorAll('.accordion-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            if (window.innerWidth < 768) {
+                entries.forEach(entry => {
+                    // Cuando la imagen entra exactamente al centro de la pantalla
+                    if (entry.isIntersecting) {
+                        // 1. REGLA DE ORO: Apagamos TODAS las imágenes primero
+                        items.forEach(item => item.classList.remove('is-active'));
+                        
+                        // 2. Encendemos SOLO la que estamos mirando
+                        entry.target.classList.add('is-active');
+                    }
+                });
+            }
+        }, {
+            // Hacemos el área de detección muy delgada en el centro (-40%)
+            // Esto garantiza que es físicamente imposible que lea 2 imágenes a la vez
+            rootMargin: '-40% 0px -40% 0px' 
+        });
+
+        items.forEach(item => observer.observe(item));
+    });
+</script>

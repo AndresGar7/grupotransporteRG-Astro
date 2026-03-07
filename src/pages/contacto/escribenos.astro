@@ -1,0 +1,199 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Escríbenos - Cotiza tu Servicio | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-32 md:pt-48 md:pb-48 px-6 md:px-12 overflow-hidden bg-black">
+        
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-40"
+             style="background-image: url('/img/contacto/escribenos-hero.jpg');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/20 to-transparent z-0"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 md:h-48 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 to-transparent z-[2]"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-paper-plane mr-2"></i> Formulario Ágil
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Solicita tu <br class="md:hidden"> <span class="text-[#f0ba18] drop-shadow-md">Cotización</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-2xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md relative z-10" style="animation-delay: 0.2s;">
+                Dinos qué necesitas mover y hacia dónde. Te daremos una respuesta rápida, clara y con el mejor precio del mercado.
+            </p>
+        </div>
+    </section>
+
+    <div class="relative z-20 w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative -mt-24 md:-mt-32">
+            
+            <div class="bg-white dark:bg-zinc-900 rounded-[2.5rem] shadow-2xl border border-gray-100 dark:border-zinc-800 overflow-hidden flex flex-col lg:flex-row animate-fade-up" style="animation-delay: 0.3s;">
+                
+                <div class="w-full lg:w-7/12 p-8 md:p-12 lg:p-16">
+                    <div class="mb-10">
+                        <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-2">
+                            Detalles del <span class="text-[#f0ba18]">Servicio</span>
+                        </h2>
+                        <p class="text-gray-500 dark:text-gray-400">Completa estos datos y un asesor te contactará en breve.</p>
+                    </div>
+
+                    <form class="space-y-8">
+                        
+                        <div class="space-y-5">
+                            <h3 class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider border-b border-gray-100 dark:border-zinc-800 pb-2">
+                                1. Tus Datos
+                            </h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Nombre y Apellido *</label>
+                                    <div class="relative group">
+                                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#f0ba18] transition-colors">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <input type="text" required class="w-full pl-11 pr-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] focus:border-transparent outline-none text-gray-800 dark:text-white transition-all shadow-inner" placeholder="Ej. Carlos Martínez">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">WhatsApp / Celular *</label>
+                                    <div class="relative group">
+                                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#f0ba18] transition-colors">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </div>
+                                        <input type="tel" required class="w-full pl-11 pr-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] focus:border-transparent outline-none text-gray-800 dark:text-white transition-all shadow-inner" placeholder="Ej. 322 501 9305">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-5">
+                            <h3 class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider border-b border-gray-100 dark:border-zinc-800 pb-2 mt-4">
+                                2. Lo que necesitas
+                            </h3>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">¿Qué servicio buscas? *</label>
+                                <div class="relative group">
+                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#f0ba18] transition-colors">
+                                        <i class="fas fa-truck-loading"></i>
+                                    </div>
+                                    <select required class="w-full pl-11 pr-10 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] focus:border-transparent outline-none text-gray-800 dark:text-white transition-all appearance-none cursor-pointer shadow-inner">
+                                        <option value="" disabled selected>Selecciona una opción...</option>
+                                        <option value="mudanzas">Trasteo / Mudanza</option>
+                                        <option value="acarreos">Acarreo Local</option>
+                                        <option value="cargas-ligeras">Paquetería y Carga Ligera</option>
+                                        <option value="cargas-pesadas">Carga Agro / Industrial (Estacas)</option>
+                                        <option value="motos">Rescate de Moto</option>
+                                        <option value="otro">Otro servicio especial</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-gray-500">
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Ciudad de Origen</label>
+                                    <div class="relative group">
+                                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#f0ba18] transition-colors">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <input type="text" class="w-full pl-11 pr-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] focus:border-transparent outline-none text-gray-800 dark:text-white transition-all shadow-inner" placeholder="Ej. Pereira">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Ciudad de Destino</label>
+                                    <div class="relative group">
+                                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#f0ba18] transition-colors">
+                                            <i class="fas fa-flag-checkered"></i>
+                                        </div>
+                                        <input type="text" class="w-full pl-11 pr-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] focus:border-transparent outline-none text-gray-800 dark:text-white transition-all shadow-inner" placeholder="Ej. Medellín">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Cuéntanos más detalles</label>
+                                <textarea rows="3" class="w-full p-4 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] focus:border-transparent outline-none text-gray-800 dark:text-white transition-all resize-none shadow-inner" placeholder="¿Qué vamos a transportar? ¿Son muchos bultos, muebles grandes o carga delicada?"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="button" class="w-full bg-[#f0ba18] text-black text-lg font-extrabold py-4 rounded-xl hover:bg-yellow-400 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center group">
+                                Enviar Solicitud <i class="fas fa-paper-plane ml-3 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                            </button>
+                            <p class="text-center text-xs text-gray-500 mt-3 font-light">Tus datos están seguros con nosotros. Cero Spam garantizado.</p>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="w-full lg:w-5/12 bg-black text-white p-8 md:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-10 -mb-10"></div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-brand text-white mb-6 tracking-wide">¿Por qué elegirnos?</h3>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18]/20 flex items-center justify-center shrink-0 mr-4 border border-[#f0ba18]/30">
+                                    <i class="fas fa-stopwatch text-[#f0ba18]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Respuesta Rápida</h4>
+                                    <p class="text-gray-400 text-sm font-light leading-relaxed mt-1">Recibirás tu cotización detallada en tiempo récord, sin vueltas.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18]/20 flex items-center justify-center shrink-0 mr-4 border border-[#f0ba18]/30">
+                                    <i class="fas fa-hand-holding-usd text-[#f0ba18]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Precios Justos</h4>
+                                    <p class="text-gray-400 text-sm font-light leading-relaxed mt-1">Calculamos tarifas exactas según tu necesidad, garantizando el mejor valor por tu dinero.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18]/20 flex items-center justify-center shrink-0 mr-4 border border-[#f0ba18]/30">
+                                    <i class="fas fa-shield-alt text-[#f0ba18]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Garantía RG</h4>
+                                    <p class="text-gray-400 text-sm font-light leading-relaxed mt-1">Tratamos cada mercancía, bulto o mueble como si fuera nuestro propio patrimonio.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="relative z-10 mt-12 pt-8 border-t border-white/10">
+                        <p class="text-sm text-gray-400 mb-4 font-light">¿Prefieres no llenar formularios? Habla directo con un asesor ahora mismo:</p>
+                        <a href="https://wa.me/573225019305?text=Hola,%20quisiera%20pedir%20una%20cotización." target="_blank" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl font-bold bg-transparent border-2 border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300">
+                            <i class="fab fa-whatsapp text-xl mr-2"></i> Chatear por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>

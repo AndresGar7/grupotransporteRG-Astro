@@ -1,0 +1,159 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import  WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
+---
+
+<MainLayout title="Nuestro Equipo | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-32 md:pt-48 md:pb-48 px-6 md:px-12 overflow-hidden bg-zinc-900">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-50"
+            style="background-image: url('/img/about-hero.jpg');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 via-black/70 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-users mr-2"></i> Talento Humano
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Nuestro <span class="text-[#f0ba18] drop-shadow-md">Equipo</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-2xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md" style="animation-delay: 0.2s;">
+                Conoce a los profesionales altamente capacitados que hacen posible que tu carga llegue siempre segura a su destino.
+            </p>
+        </div>
+    </section>
+
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-24">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-24 md:-mt-32 space-y-12 md:space-y-20">
+            
+            <div class="bg-white dark:bg-zinc-900 rounded-[2.5rem] p-6 md:p-10 shadow-xl border border-gray-100 dark:border-zinc-800 animate-fade-up">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div class="relative w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden group">
+                        <img src="/img/equipo-comercial.jpg" alt="Equipo Comercial" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="flex flex-col space-y-5 lg:pr-6">
+                        <div class="w-14 h-14 rounded-2xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center border border-[#f0ba18]/20">
+                            <i class="fas fa-headset text-2xl"></i>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                            Equipo <span class="text-[#f0ba18]">Comercial</span>
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light">
+                            Nuestra fuerza comercial centralizada en el <strong>Contact Center</strong> es el primer eslabón de confianza. Gestionamos y coordinamos cada detalle de tus servicios logísticos, garantizando una <strong class="text-black dark:text-white">comunicación continua, oportuna y transparente.</strong>
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light">
+                            Brindamos atención personalizada a través de múltiples canales (llamadas, chat, visitas presenciales), respaldando cada etapa del proceso con soporte y seguimiento en tiempo real.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-zinc-900 rounded-[2.5rem] p-6 md:p-10 shadow-xl border border-gray-100 dark:border-zinc-800 animate-fade-up" style="animation-delay: 0.2s;">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div class="flex flex-col space-y-5 lg:pl-6 order-2 lg:order-1">
+                        <div class="w-14 h-14 rounded-2xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center border border-[#f0ba18]/20">
+                            <i class="fas fa-hard-hat text-2xl"></i>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                            Equipo <span class="text-[#f0ba18]">Operativo</span>
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light">
+                            El corazón de <strong>Grupo Transporte RG</strong>. Contamos con un equipo robusto conformado por <strong class="text-black dark:text-white">conductores expertos, logísticos, jefes de bodega y auxiliares operativos</strong>.
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light">
+                            Ellos tienen la inmensa responsabilidad de llevar consigo la imagen de la compañía en cada ruta. Por ello, invertimos en <strong>capacitación continua</strong> para mantener altos estándares de calidad, asegurando que tus mercancías y mudanzas sean manipuladas con el mayor cuidado y profesionalismo.
+                        </p>
+                    </div>
+                    <div class="relative w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden group order-1 lg:order-2">
+                        <img src="/img/equipo-operativo.jpg" alt="Equipo Operativo" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 animate-fade-up" style="animation-delay: 0.4s;">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                        Comprometidos con el <span class="text-[#f0ba18]">Bienestar</span>
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 mt-3 font-light text-lg">La seguridad no es un requisito, es nuestra cultura.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <div class="group bg-[#f0ba18] rounded-[2rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden flex flex-col justify-center">
+                        <div class="absolute top-0 right-0 opacity-10 pointer-events-none mt-4 mr-4 transition-transform duration-700 group-hover:scale-110">
+                            <i class="fas fa-heartbeat text-[10rem] text-black"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 rounded-2xl bg-black/10 text-black flex items-center justify-center mb-6">
+                                <i class="fas fa-shield-alt text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-brand text-black mb-4 uppercase tracking-wide">
+                                Sistema de Gestión (SST)
+                            </h3>
+                            <p class="text-black/80 text-lg leading-relaxed font-medium">
+                                Nos preocupamos profundamente por el bienestar de nuestros colaboradores, proveedores y clientes. Damos estricto cumplimiento a las normativas de <strong>Seguridad y Salud en el Trabajo</strong>, velando por un entorno seguro que nos permite realizar nuestras labores de manera responsable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-zinc-800 relative overflow-hidden flex flex-col justify-center">
+                        <div class="absolute top-0 right-0 opacity-5 dark:opacity-10 pointer-events-none mt-4 mr-4 transition-transform duration-700 group-hover:scale-110">
+                            <i class="fas fa-road text-[10rem] text-black dark:text-white"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 rounded-2xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center mb-6">
+                                <i class="fas fa-truck-monster text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-brand text-black dark:text-white mb-4 uppercase tracking-wide">
+                                Seguridad Vial (PESV)
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light">
+                                Reconocemos nuestra responsabilidad como actores viales en las carreteras de Colombia. Nuestro <strong>Plan Estratégico de Seguridad Vial</strong> tiene como objetivo principal garantizar la vida, cuidando a nuestros conductores y a todos los que comparten la vía con nosotros.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pt-10 animate-fade-up" style="animation-delay: 0.6s;">
+                <div class="bg-black dark:bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center shadow-2xl border border-zinc-800 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+                    <div class="relative z-10">
+                        <h2 class="font-brand text-3xl md:text-5xl text-white uppercase tracking-wide mb-6">
+                            Un equipo listo para tu <span class="text-[#f0ba18]">próximo envío</span>
+                        </h2>
+                        <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                            Respaldo, profesionalismo y calidez humana a tu disposición. Contáctanos y recibe asesoría inmediata por parte de nuestros especialistas.
+                        </p>
+                        
+                        <WhatsAppBtn texto="Hablemos de tu envío"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>

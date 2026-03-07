@@ -1,0 +1,119 @@
+---
+// Importamos el layout. 
+// OJO: Como estamos en la subcarpeta (nosotros/), agregamos '../' extra
+import MainLayout from '../../layouts/MainLayout.astro';
+import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
+---
+
+<MainLayout title="Nuestra Historia | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-32 md:pt-48 md:pb-48 px-6 md:px-12 overflow-hidden bg-zinc-900">
+    
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] hover:scale-105 opacity-50"
+            style="background-image: url('/img/about-hero.jpg');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 via-black/70 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-flag-checkered mr-2"></i> 4 Años de Evolución Constante
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Nuestra <br class="md:hidden"> <span class="text-[#f0ba18] drop-shadow-md">Trayectoria</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-2xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md" style="animation-delay: 0.2s;">
+                Más que mover carga, conectamos historias. Conoce cómo empezamos y hacia dónde vamos.
+            </p>
+        </div>
+    </section>
+
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-24">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-24 md:-mt-32 mb-20">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                
+                <div class="md:col-span-2 group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-zinc-800 animate-fade-up">
+                    <div class="w-16 h-16 rounded-2xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 border border-[#f0ba18]/20">
+                        <i class="fas fa-calendar-alt text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white mb-4 uppercase tracking-wide">
+                        El Comienzo
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl leading-relaxed font-light">
+                        La historia de <strong class="text-black dark:text-white font-bold">Grupo Transporte RG</strong> comenzó el <strong class="text-[#f0ba18]">10 de julio de 2021</strong>. Mientras el mundo cambiaba y enfrentaba grandes retos, nosotros vimos la oportunidad de crear un servicio logístico diferente: uno que fuera más humano, más seguro y verdaderamente comprometido con cada entrega.
+                    </p>
+                </div>
+
+                <div class="group bg-[#f0ba18] rounded-[2rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-up flex flex-col justify-center" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 rounded-2xl bg-black/10 text-black flex items-center justify-center mb-8 group-hover:rotate-12 transition-transform duration-300">
+                        <i class="fas fa-handshake text-3xl"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-brand text-black mb-4 uppercase tracking-wide">
+                        Nuestra Visión
+                    </h2>
+                    <p class="text-black/80 text-lg leading-relaxed font-medium">
+                        Empezamos con una visión clara y mucha determinación. Aprendimos que la tecnología es vital, pero que la verdadera confianza se construye <strong class="text-black font-black">kilómetro a kilómetro.</strong>
+                    </p>
+                </div>
+
+                <div class="md:col-span-3 group relative bg-white dark:bg-zinc-900 rounded-[2rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-zinc-800 overflow-hidden animate-fade-up" style="animation-delay: 0.4s;">
+                    
+                    <div class="absolute right-0 bottom-0 opacity-5 dark:opacity-10 pointer-events-none">
+                        <i class="fas fa-map-marked-alt text-[15rem] -mb-10 -mr-10 text-black dark:text-white"></i>
+                    </div>
+
+                    <div class="relative z-10 md:w-3/4">
+                        <div class="w-16 h-16 rounded-2xl bg-[#f0ba18]/10 text-[#f0ba18] flex items-center justify-center mb-8 group-hover:translate-x-2 transition-transform duration-300 border border-[#f0ba18]/20">
+                            <i class="fas fa-truck text-3xl"></i>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white mb-4 uppercase tracking-wide">
+                            Conectando a <span class="text-[#f0ba18]">Colombia</span>
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl leading-relaxed font-light">
+                            Hoy nos hemos consolidado como un referente en el sector. A lo largo de estos 4 años de evolución constante, nuestros camiones han recorrido incansablemente el territorio nacional. 
+                            <br><br>
+                            Desde la brisa costera de <strong class="text-black dark:text-white">Cartagena</strong>, pasando por las imponentes montañas de <strong class="text-black dark:text-white">Santander</strong> y <strong class="text-black dark:text-white">Medellín</strong>. Hemos cruzado la capital <strong class="text-black dark:text-white">Bogotá</strong>, recorrido la tradición de <strong class="text-black dark:text-white">Manizales</strong> y el <strong class="text-black dark:text-white">Eje Cafetero</strong>, hasta llegar al sur en <strong class="text-black dark:text-white">Pasto</strong>. Llevamos el progreso a cada rincón de nuestro país.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 animate-fade-up" style="animation-delay: 0.6s;">
+            <div class="bg-black dark:bg-zinc-900 rounded-[2rem] p-10 md:p-14 text-center shadow-2xl border border-zinc-800 relative overflow-hidden group">
+                
+                <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+                <div class="relative z-10">
+                    <h2 class="font-brand text-3xl md:text-5xl text-white uppercase tracking-wide mb-6">
+                        Sé parte de <span class="text-[#f0ba18]">nuestra historia</span>
+                    </h2>
+                    <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                        Permítenos demostrarte por qué cientos de clientes confían en nosotros para transportar lo más importante para ellos.
+                    </p>
+                    
+                    <WhatsAppBtn texto="Hablemos de tu envío"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
