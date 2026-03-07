@@ -1,10 +1,10 @@
 ---
 // src/layouts/MainLayout.astro
-import Navbar from '../components/Navbar.vue';
-import Footer from '../components/Footer.astro';
-import ScrollTop from '../components/ScrollTop.astro';
-import WhatsAppButton from '../components/WhatsAppButton.astro';
-import CallButton from '../components/CallButton.astro';
+import Navbar from '../components/global/Navbar.vue';
+import Footer from '../components/global/Footer.astro';
+import ScrollTop from '../components/global/ScrollTop.astro';
+import WhatsAppButton from '../components/global/WhatsAppButton.astro';
+import CallButton from '../components/global/CallButton.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -36,7 +36,8 @@ const menuItems = [
     submenu: [
       { name: 'Nuestra Historia', url: '/nosotros#historia' },
       { name: 'Misión y Visión', url: '/nosotros#mision' },
-      { name: 'Equipo', url: '/nosotros#equipo' }
+      { name: 'Equipo', url: '/nosotros#equipo' },
+      { name: 'Cobertura', url: '/nosotros/cobertura' }
     ] 
   },
   { 
