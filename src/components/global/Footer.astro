@@ -1,6 +1,5 @@
 ---
 // src/components/Footer.astro
-// No necesitamos importar nada ya que usaremos HTML/Astro estándar
 const currentYear = new Date().getFullYear();
 ---
 
@@ -8,12 +7,12 @@ const currentYear = new Date().getFullYear();
     
     <div class="max-w-7xl mx-auto px-6 py-16">
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
 
             <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
                 <div class="space-y-2">
                     <h3 class="font-brand text-2xl text-white uppercase tracking-wider">
-                        Grupo <span class="text-[#f0ba18]">Transportes RG</span>
+                        Grupo <br/> <span class="text-[#f0ba18]">Transporte RG</span>
                     </h3>
                     <div class="h-1 w-20 bg-[#f0ba18] rounded-full mx-auto md:mx-0"></div>
                 </div>
@@ -53,7 +52,7 @@ const currentYear = new Date().getFullYear();
                         </a>
                     </li>
                     <li>
-                        <a href="/contacto" class="group flex items-center justify-center md:justify-start gap-2 hover:text-[#f0ba18] transition-colors">
+                        <a href="/contacto/escribenos" class="group flex items-center justify-center md:justify-start gap-2 hover:text-[#f0ba18] transition-colors">
                             <i class="fas fa-chevron-right text-xs text-[#f0ba18] opacity-0 group-hover:opacity-100 transition-opacity"></i>
                             Contacto
                         </a>
@@ -63,17 +62,32 @@ const currentYear = new Date().getFullYear();
 
             <div class="flex flex-col items-center md:items-start text-center md:text-left">
                 <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wide border-b-2 border-[#f0ba18] pb-2 inline-block">
-                    Legal
+                    Legal y Ayuda
                 </h4>
                 <ul class="space-y-3 w-full">
                     <li>
-                        <a href="#" class="hover:text-[#f0ba18] transition-colors">Política de Datos</a>
+                        <a href="/politicas-de-privacidad" class="group flex items-center justify-center md:justify-start gap-2 hover:text-[#f0ba18] transition-colors">
+                            <i class="fas fa-shield-alt text-xs text-gray-500 group-hover:text-[#f0ba18] transition-colors"></i>
+                            Política de Privacidad
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-[#f0ba18] transition-colors">Términos y Condiciones</a>
+                        <a href="/terminos-y-condiciones" class="group flex items-center justify-center md:justify-start gap-2 hover:text-[#f0ba18] transition-colors">
+                            <i class="fas fa-file-contract text-xs text-gray-500 group-hover:text-[#f0ba18] transition-colors"></i>
+                            Términos y Condiciones
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-[#f0ba18] transition-colors">Preguntas Frecuentes</a>
+                        <a href="/contacto/pqrs" class="group flex items-center justify-center md:justify-start gap-2 hover:text-[#f0ba18] transition-colors">
+                            <i class="fas fa-file-signature text-xs text-gray-500 group-hover:text-[#f0ba18] transition-colors"></i>
+                            Radicar PQRS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contacto/faq" class="group flex items-center justify-center md:justify-start gap-2 hover:text-[#f0ba18] transition-colors">
+                            <i class="fas fa-question-circle text-xs text-gray-500 group-hover:text-[#f0ba18] transition-colors"></i>
+                            Preguntas Frecuentes
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -90,7 +104,10 @@ const currentYear = new Date().getFullYear();
                         <div>
                             <strong class="text-white block mb-1">Sede Principal:</strong>
                             <span class="block">La Virginia, Risaralda</span>
-                            <span class="block">Calle 16A #4A - 05</span>
+                            <span class="block">Calle 12 #4-34</span>
+                            <a href="https://maps.google.com/?q=Grupo+Transporte+RG,+Calle+12+%234-34,+La+Virginia,+Risaralda,+Colombia" target="_blank" class="text-[#f0ba18] text-xs font-bold hover:text-white transition-colors mt-1 inline-block">
+                                Ver ubicación en mapa <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
                         </div>
                     </li>
                     <li class="flex flex-col md:flex-row items-center md:items-start gap-3">
@@ -98,14 +115,9 @@ const currentYear = new Date().getFullYear();
                             <i class="fas fa-phone-alt"></i>
                         </div>
                         <div>
-                            <strong class="text-white block mb-1">Llámanos:</strong>
-                            <a href="tel:+573207797441" class="hover:text-[#f0ba18] transition-colors">320 779 7441</a>
+                            <strong class="text-white block mb-1">Línea Nacional:</strong>
+                            <a href="tel:+573225019305" class="hover:text-[#f0ba18] transition-colors font-bold text-lg">322 501 9305</a>
                         </div>
-                    </li>
-                    <li class="pt-2">
-                        <a href="#" class="text-[#f0ba18] text-xs uppercase font-bold hover:text-white transition-colors border-b border-[#f0ba18] hover:border-white pb-0.5">
-                            Ver ubicación en mapa
-                        </a>
                     </li>
                 </ul>
             </div>
@@ -116,12 +128,18 @@ const currentYear = new Date().getFullYear();
     <div class="bg-black py-6 border-t border-zinc-800">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
             <p>
-                © {currentYear} <span class="text-[#f0ba18] font-bold">Grupo Transportes RG</span>. Todos los derechos reservados.
+                © {currentYear} <span class="text-[#f0ba18] font-bold">Grupo Transporte RG</span>. Todos los derechos reservados.
             </p>
-            <div class="flex gap-4">
-                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-facebook-f text-lg"></i></a>
-                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-instagram text-lg"></i></a>
-                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-whatsapp text-lg"></i></a>
+            <div class="flex gap-5">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="hover:text-[#f0ba18] transition-colors transform hover:scale-110">
+                    <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="hover:text-[#f0ba18] transition-colors transform hover:scale-110">
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="https://wa.me/573225019305" target="_blank" aria-label="WhatsApp" class="hover:text-[#25D366] transition-colors transform hover:scale-110">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                </a>
             </div>
         </div>
     </div>

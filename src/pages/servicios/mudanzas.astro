@@ -27,11 +27,11 @@ import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
         </div>
     </section>
 
-    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-24">
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-20">
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-24 md:-mt-32 space-y-16 md:space-y-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-24 md:-mt-32 space-y-12 md:space-y-16">
             
-            <div class="animate-fade-up" style="animation-delay: 0.3s;">
+            <div class="animate-fade-up mb-30" style="animation-delay: 0.3s;">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     
                     <div class="md:col-span-2 group bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-zinc-800 relative overflow-hidden">
@@ -68,35 +68,94 @@ import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
                         </div>
                     </div>
 
-                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
-                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
-                            <i class="fas fa-boxes text-xl"></i>
+                   
+
+                </div>
+            </div>
+
+            <div class="animate-fade-up w-full" style="animation-delay: 0.5s;">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
+                        Un Servicio a tu <span class="text-[#f0ba18]">Medida</span>
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 mt-3 font-light text-lg max-w-2xl mx-auto">
+                        Adaptamos nuestro equipo y vehículos al tamaño de tu necesidad.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row h-[600px] md:h-[500px] w-full gap-3 md:gap-4 overflow-hidden">
+                    
+                    <div class="accordion-item min-h-[100px] md:min-h-0 group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/mudanzas/hogares.png" alt="Mudanzas de Hogares" class="imagen-fondo absolute inset-0 w-full h-full object-cover transition-all duration-700 grayscale-[30%] brightness-[0.4] md:group-hover:grayscale-0 md:group-hover:brightness-100 md:group-hover:scale-110" />
+                        
+                        <div class="capa-oscura absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-700 md:group-hover:opacity-0"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full relative z-10 pointer-events-none">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0 shadow-lg">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap titulo-sombra transition-all duration-500">
+                                    Hogares y Apartamentos
+                                </h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-black font-bold text-sm md:text-base overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100 texto-resplandor mt-1">
+                                    Trasladamos casas completas. Nos encargamos de cargar muebles, electrodomésticos y cajas por escaleras o ascensores con total precaución.
+                                </p>
+                            </div>
                         </div>
-                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Servicio de Embalaje</h4>
-                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Suministramos material de empaque profesional (cartón corrugado, plástico burbuja, mantas) para proteger tu mobiliario.</p>
                     </div>
 
-                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
-                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
-                            <i class="fas fa-building text-xl"></i>
+                    <div class="accordion-item min-h-[100px] md:min-h-0 group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/mudanzas/oficinas.png" alt="Mudanzas Corporativas" class="imagen-fondo absolute inset-0 w-full h-full object-cover transition-all duration-700 grayscale-[30%] brightness-[0.4] md:group-hover:grayscale-0 md:group-hover:brightness-100 md:group-hover:scale-110" />
+                        
+                        <div class="capa-oscura absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-700 md:group-hover:opacity-0"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full relative z-10 pointer-events-none">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0 shadow-lg">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap titulo-sombra transition-all duration-500">
+                                    Oficinas y Locales
+                                </h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-black font-bold text-sm md:text-base overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100 texto-resplandor mt-1">
+                                    Mueve tu negocio sin frenar tus ventas. Traslado planificado de puestos de trabajo, archivo, computadores y estantería comercial.
+                                </p>
+                            </div>
                         </div>
-                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Mudanzas Corporativas</h4>
-                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Traslado de oficinas, equipos de cómputo y archivo con logística planificada para no interrumpir tu operación.</p>
                     </div>
 
-                    <div class="group bg-white dark:bg-zinc-900 rounded-[2rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-zinc-800">
-                        <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 text-[#f0ba18] flex items-center justify-center mb-6 shadow-inner">
-                            <i class="fas fa-map-marked-alt text-xl"></i>
+                    <div class="accordion-item min-h-[100px] md:min-h-0 group relative flex-1 md:hover:flex-[3] transition-all duration-700 ease-in-out rounded-[2rem] overflow-hidden cursor-pointer shadow-lg border border-gray-100 dark:border-zinc-800">
+                        <img src="/img/servicios/mudanzas/habitaciones.png" alt="Trasteos Pequeños" class="imagen-fondo absolute inset-0 w-full h-full object-cover transition-all duration-700 grayscale-[30%] brightness-[0.4] md:group-hover:grayscale-0 md:group-hover:brightness-100 md:group-hover:scale-110" />
+                        
+                        <div class="capa-oscura absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-700 md:group-hover:opacity-0"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-5 md:p-8 w-full flex flex-col justify-end h-full relative z-10 pointer-events-none">
+                            <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-[#f0ba18] text-black flex items-center justify-center shrink-0 shadow-lg">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white whitespace-nowrap titulo-sombra transition-all duration-500">
+                                    Habitaciones (Pequeñas)
+                                </h3>
+                            </div>
+                            <div class="accordion-content grid transition-all duration-500 ease-in-out grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                                <p class="text-black font-bold text-sm md:text-base overflow-hidden opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100 texto-resplandor mt-1">
+                                    Si solo te mudas de habitación o tienes pocos muebles, te asignamos un vehículo más pequeño para que no pagues de más.
+                                </p>
+                            </div>
                         </div>
-                        <h4 class="text-xl font-bold text-black dark:text-white mb-3">Cobertura Nacional</h4>
-                        <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed">Servicio puerta a puerta desde y hacia cualquier ciudad de Colombia, con tiempos de entrega garantizados.</p>
                     </div>
 
                 </div>
             </div>
 
-            <div class="animate-fade-up py-12 md:py-24" style="animation-delay: 0.5s;">
-                <div class="text-center mb-16">
+            <div class="animate-fade-up w-full" style="animation-delay: 0.5s;">
+                <div class="text-center mb-8 md:mb-10">
                     <h2 class="text-3xl md:text-4xl font-brand text-black dark:text-white uppercase tracking-wide">
                         ¿Cómo <span class="text-[#f0ba18]">Funciona?</span>
                     </h2>
@@ -142,7 +201,7 @@ import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
                 </div>
             </div>
 
-            <div class="animate-fade-up" style="animation-delay: 0.7s;">
+            <div class="animate-fade-up w-full" style="animation-delay: 0.7s;">
                 <div class="bg-black dark:bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center shadow-2xl border border-zinc-800 relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:opacity-20 transition-opacity duration-500"></div>
                     <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#f0ba18] opacity-10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:opacity-20 transition-opacity duration-500"></div>
@@ -155,7 +214,10 @@ import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
                             Déjanos los detalles pesados a nosotros. Escríbenos ahora y recibe una cotización personalizada sin compromiso.
                         </p>
                         
-                        <WhatsAppBtn texto="Hablemos de tu envío"/>
+                        <WhatsAppBtn 
+                            texto="Hablemos de tu envío"
+                            mensaje="Hola,%20quisiera%20cotizar%20una%20mudanza."
+                        />
                     </div>
                 </div>
             </div>
@@ -174,4 +236,66 @@ import WhatsAppBtn from '../../components/global/WhatsAppBtn.astro';
     @keyframes fadeUp {
         to { opacity: 1; transform: translateY(0); }
     }
+
+    /* Sombras Mágicas para Legibilidad */
+    .titulo-sombra {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9), -1px -1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .texto-resplandor {
+        text-shadow: 0 0 6px #f0ba18, 
+                     0 0 12px #f0ba18, 
+                     0 0 18px #f0ba18, 
+                     0 0 4px #f0ba18;
+    }
+
+    /* Efectos del Acordeón Mágico */
+    .accordion-item {
+        transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    @media (max-width: 767px) {
+        .accordion-item {
+            flex-basis: 100px !important;
+        }
+        .accordion-item.is-active {
+            flex: 3 !important;
+        }
+        
+        .accordion-item.is-active .imagen-fondo {
+            filter: grayscale(0%) brightness(1) !important;
+            transform: scale(1.1) !important;
+        }
+        .accordion-item.is-active .capa-oscura {
+            opacity: 0 !important;
+        }
+        
+        .accordion-item.is-active .accordion-content {
+            grid-template-rows: 1fr !important;
+        }
+        .accordion-item.is-active p {
+            opacity: 1 !important;
+        }
+    }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const items = document.querySelectorAll('.accordion-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            if (window.innerWidth < 768) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        items.forEach(item => item.classList.remove('is-active'));
+                        entry.target.classList.add('is-active');
+                    }
+                });
+            }
+        }, {
+            rootMargin: '-40% 0px -40% 0px' 
+        });
+
+        items.forEach(item => observer.observe(item));
+    });
+</script>

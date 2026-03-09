@@ -1,0 +1,232 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Centro de PQRS | Grupo Transporte RG">
+    
+    <section class="relative w-full pt-40 pb-32 md:pt-48 md:pb-40 px-6 md:px-12 overflow-hidden bg-zinc-900">
+        
+        <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-40"
+             style="background-image: url('/img/contacto/pqrs-hero.png');">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-50 dark:from-zinc-950 via-black/80 to-black/40 z-0"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase bg-[#f0ba18] text-black mb-6 shadow-[0_0_15px_rgba(240,186,24,0.4)] animate-fade-up">
+                <i class="fas fa-file-signature mr-2"></i> Atención al Ciudadano y Cliente
+            </div>
+
+            <h1 class="font-brand text-5xl md:text-7xl text-white font-bold leading-tight animate-fade-up uppercase tracking-wide drop-shadow-2xl" style="animation-delay: 0.1s;">
+                Radica tu <span class="text-[#f0ba18] drop-shadow-md">PQRS</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg md:text-xl font-light leading-relaxed mt-6 max-w-2xl animate-fade-up drop-shadow-md relative z-10" style="animation-delay: 0.2s;">
+                Peticiones, Quejas, Reclamos, Sugerencias o Felicitaciones. Tu opinión es el motor que nos impulsa a mejorar nuestro servicio cada día.
+            </p>
+        </div>
+    </section>
+
+    <div class="w-full bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 pb-24">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-20 -mt-12 md:-mt-20">
+            
+            <div class="flex flex-col lg:flex-row bg-white dark:bg-zinc-900 rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 dark:border-zinc-800 animate-fade-up" style="animation-delay: 0.3s;">
+                
+                <div class="w-full lg:w-4/12 bg-[#f0ba18] p-10 md:p-14 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 opacity-10 pointer-events-none mt-4 mr-4">
+                        <i class="fas fa-comments text-[12rem] text-black"></i>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <h2 class="text-4xl md:text-5xl font-brand text-black mb-6 leading-tight uppercase">
+                            Siéntete libre <br> de enviar <br> tu PQRS
+                        </h2>
+                        
+                        <p class="text-black/80 font-medium text-lg leading-relaxed mb-8">
+                            En Grupo Transporte RG estamos comprometidos con la transparencia y la satisfacción de nuestros clientes. 
+                        </p>
+                        
+                        <ul class="space-y-4">
+                            <li class="flex items-start text-black">
+                                <i class="fas fa-check-circle mt-1 mr-3 opacity-70"></i>
+                                <span class="text-sm font-bold">Tiempos de respuesta de ley (15 días hábiles).</span>
+                            </li>
+                            <li class="flex items-start text-black">
+                                <i class="fas fa-check-circle mt-1 mr-3 opacity-70"></i>
+                                <span class="text-sm font-bold">Investigación exhaustiva de cada caso.</span>
+                            </li>
+                            <li class="flex items-start text-black">
+                                <i class="fas fa-check-circle mt-1 mr-3 opacity-70"></i>
+                                <span class="text-sm font-bold">Privacidad y manejo seguro de datos.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="relative z-10 mt-12 pt-8 border-t border-black/10">
+                        <p class="text-black/70 text-sm font-bold mb-2">Línea de Atención al Cliente:</p>
+                        <p class="text-3xl font-brand text-black">(+57) 322 5019305</p>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-8/12 p-8 md:p-12 lg:p-16">
+                    
+                    <form class="space-y-8">
+                        
+                        <div class="space-y-3">
+                            <label class="block text-sm font-bold text-gray-700 dark:text-gray-300">
+                                Categoría de la Solicitud <span class="text-red-500">*</span>
+                            </label>
+                            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="categoria" value="Peticion" class="peer sr-only" required>
+                                    <div class="text-center px-3 py-3 rounded-xl border border-gray-200 dark:border-zinc-700 text-sm font-bold text-gray-600 dark:text-gray-400 peer-checked:bg-[#f0ba18] peer-checked:text-black peer-checked:border-[#f0ba18] transition-all hover:bg-gray-50 dark:hover:bg-zinc-800 shadow-sm">
+                                        Petición
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="categoria" value="Queja" class="peer sr-only">
+                                    <div class="text-center px-3 py-3 rounded-xl border border-gray-200 dark:border-zinc-700 text-sm font-bold text-gray-600 dark:text-gray-400 peer-checked:bg-[#f0ba18] peer-checked:text-black peer-checked:border-[#f0ba18] transition-all hover:bg-gray-50 dark:hover:bg-zinc-800 shadow-sm">
+                                        Queja
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="categoria" value="Reclamo" class="peer sr-only">
+                                    <div class="text-center px-3 py-3 rounded-xl border border-gray-200 dark:border-zinc-700 text-sm font-bold text-gray-600 dark:text-gray-400 peer-checked:bg-[#f0ba18] peer-checked:text-black peer-checked:border-[#f0ba18] transition-all hover:bg-gray-50 dark:hover:bg-zinc-800 shadow-sm">
+                                        Reclamo
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="categoria" value="Sugerencia" class="peer sr-only">
+                                    <div class="text-center px-3 py-3 rounded-xl border border-gray-200 dark:border-zinc-700 text-sm font-bold text-gray-600 dark:text-gray-400 peer-checked:bg-[#f0ba18] peer-checked:text-black peer-checked:border-[#f0ba18] transition-all hover:bg-gray-50 dark:hover:bg-zinc-800 shadow-sm">
+                                        Sugerencia
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer md:col-span-1 col-span-2">
+                                    <input type="radio" name="categoria" value="Felicitacion" class="peer sr-only">
+                                    <div class="text-center px-3 py-3 rounded-xl border border-gray-200 dark:border-zinc-700 text-sm font-bold text-gray-600 dark:text-gray-400 peer-checked:bg-[#f0ba18] peer-checked:text-black peer-checked:border-[#f0ba18] transition-all hover:bg-gray-50 dark:hover:bg-zinc-800 shadow-sm">
+                                        Felicitación
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Prioridad</label>
+                                <select class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white transition-all shadow-inner">
+                                    <option value="" disabled selected>-- Por favor elige una opción --</option>
+                                    <option>Alta</option>
+                                    <option>Media</option>
+                                    <option>Baja</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Tipo de documento <span class="text-red-500">*</span></label>
+                                <select required class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white transition-all shadow-inner">
+                                    <option value="" disabled selected>-- Por favor elige una opción --</option>
+                                    <option>Cédula de Ciudadanía (CC)</option>
+                                    <option>NIT</option>
+                                    <option>Cédula de Extranjería (CE)</option>
+                                    <option>Pasaporte</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Número de factura (Opcional)</label>
+                                <input type="text" class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="Ej. FAC-1234">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Número de remesa de carga (Opcional)</label>
+                                <input type="text" class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="Ej. REM-5678">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Nombre completo <span class="text-red-500">*</span></label>
+                                <input type="text" required class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="Nombre y Apellidos">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Número de identificación <span class="text-red-500">*</span></label>
+                                <input type="text" required class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="Ej. 1088...">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">E-mail <span class="text-red-500">*</span></label>
+                                <input type="email" required class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="correo@ejemplo.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Dirección <span class="text-red-500">*</span></label>
+                                <input type="text" required class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="Dirección de residencia">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Ciudad <span class="text-red-500">*</span></label>
+                                <input type="text" required class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="Ej. Pereira">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Teléfono Fijo</label>
+                                <input type="tel" class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Número de celular <span class="text-red-500">*</span></label>
+                                <input type="tel" required class="w-full px-4 py-3.5 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] outline-none text-gray-800 dark:text-white shadow-inner" placeholder="Ej. 300 000 0000">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Adjuntar Archivo (Evidencia)</label>
+                                <input type="file" class="w-full text-sm text-gray-500 dark:text-gray-400
+                                    file:mr-4 file:py-3.5 file:px-4
+                                    file:rounded-xl file:border-0
+                                    file:text-sm file:font-bold
+                                    file:bg-[#f0ba18]/10 file:text-[#f0ba18]
+                                    hover:file:bg-[#f0ba18]/20
+                                    cursor-pointer transition-colors border border-gray-200 dark:border-zinc-800 rounded-xl bg-gray-50 dark:bg-zinc-950">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Escriba su PQR, sugerencia o felicitación: <span class="text-red-500">*</span></label>
+                            <textarea required rows="5" class="w-full p-4 bg-gray-50 dark:bg-zinc-950 border border-gray-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-[#f0ba18] focus:border-transparent outline-none text-gray-800 dark:text-white transition-all resize-none shadow-inner" placeholder="Detalle los hechos con la mayor claridad posible..."></textarea>
+                        </div>
+
+                        <div class="pt-4 space-y-6">
+                            <label class="flex items-start space-x-3 cursor-pointer group">
+                                <div class="relative flex items-center justify-center pt-1">
+                                    <input type="checkbox" required class="peer sr-only">
+                                    <div class="w-5 h-5 border-2 border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-zinc-900 peer-checked:bg-[#f0ba18] peer-checked:border-[#f0ba18] transition-colors flex items-center justify-center">
+                                        <i class="fas fa-check text-black text-xs opacity-0 peer-checked:opacity-100 transition-opacity"></i>
+                                    </div>
+                                </div>
+                                <span class="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                                    Conozco y acepto la <a href="/politicas-de-privacidad" class="text-[#f0ba18] hover:underline font-bold">política tratamiento de datos personales</a> y Autorizo el manejo de estos para la gestión de mi solicitud. <span class="text-red-500">*</span>
+                                </span>
+                            </label>
+
+                            <button type="submit" class="w-full md:w-auto px-10 bg-black dark:bg-zinc-800 text-white dark:text-white font-extrabold py-4 rounded-xl hover:bg-[#f0ba18] hover:text-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-[#f0ba18]/20 flex items-center justify-center">
+                                Enviar Solicitud <i class="fas fa-paper-plane ml-3"></i>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
