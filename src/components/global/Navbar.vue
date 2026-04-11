@@ -50,20 +50,25 @@ onMounted(async () => {
 
 <template>
   <header class="w-full fixed top-0 left-0 z-50 font-sans">
-    <div class="bg-[#f0ba18] p-2 text-sm text-center md:text-left w-full shadow-sm relative z-50">
+    
+    <div class="bg-[#f0ba18] p-2 text-sm w-full shadow-sm relative z-50">
       <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+        
         <div class="hidden sm:flex items-center gap-2">
           <a href="mailto:grupotransporterg@gmail.com" class="font-bold text-gray-800 hover:text-black transition-colors">
             <i class="fa-solid fa-envelope mr-1"></i> grupotransporterg@gmail.com
           </a>
         </div>
+        
         <a :href="phoneLink" class="font-bold text-gray-800 hover:text-black md:text-lg flex items-center gap-2">
           <i class="fa-solid fa-phone-volume animate-pulse"></i> (+57) 322 - 5019305
         </a>
-        <div class="hidden sm:flex gap-4">
-          <a href="https://www.facebook.com/grupotransporterg" target="_blank" class="text-2xl text-gray-800 hover:text-black transition-transform hover:scale-110"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="https://www.instagram.com/grupotransporterg?igsh=MWl0NThubzc1ZWxkdQ==" target="_blank" class="text-2xl text-gray-800 hover:text-black transition-transform hover:scale-110"><i class="fa-brands fa-square-instagram"></i></a>
+        
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/grupotransporterg" target="_blank" class="text-2xl md:text-2xl text-gray-800 hover:text-black transition-transform hover:scale-110"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/grupotransporterg?igsh=MWl0NThubzc1ZWxkdQ==" target="_blank" class="text-2xl md:text-2xl text-gray-800 hover:text-black transition-transform hover:scale-110"><i class="fa-brands fa-square-instagram"></i></a>
         </div>
+
       </div>
     </div>
 
